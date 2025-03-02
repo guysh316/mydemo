@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ورود با کد تایید</title>
+    <link rel="stylesheet" href="css/code.css">
+    <link href="img/favicon/favicn.jpg" rel="icon">
+    <link href="https://fonts.googleapis.com/css2?family=Gwendolyn:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        <img src="img/favicon/favicn.jpg" alt="Logo" class="logo">
+        <h2>کد تایید را وارد کنید</h2>
+        <div class="message">کد تایید برای شماره موبایل 0912345678 پیامک شد</div>
+        <div class="code"> کد: 5 4 3 2 1 </div>
+        <div class="code-inputs">
+            <input type="text" maxlength="1" id="input1" oninput="moveToNext(this, 'input2')" onkeydown="moveToPrev(event, 'input2')" inputmode="numeric" pattern="[0-9]*">
+            <input type="text" maxlength="1" id="input2" oninput="moveToNext(this, 'input3')" onkeydown="moveToPrev(event, 'input3')" inputmode="numeric" pattern="[0-9]*">
+            <input type="text" maxlength="1" id="input3" oninput="moveToNext(this, 'input4')" onkeydown="moveToPrev(event, 'input4')" inputmode="numeric" pattern="[0-9]*">
+            <input type="text" maxlength="1" id="input4" oninput="moveToNext(this, 'input5')" onkeydown="moveToPrev(event, 'input5')" inputmode="numeric" pattern="[0-9]*">
+            <input type="text" maxlength="1" id="input5" onkeydown="moveToPrev(event, 'input5')" inputmode="numeric" pattern="[0-9]*">
+        </div>
+        <div class="error-message" id="error">کد وارد شده اشتباه است</div>
+        <a href="#" class="password-link">ورود با رمز عبور</a>
+        <div class="timer" id="timer">03:00 مانده تا دریافت مجدد کد</div>
+        <div class="resend-link" id="resend">دریافت مجدد کد</div>
+        <button class="submit-button" onclick="validateCode()">تایید</button>
+    </div>
+
+    <div id="loading">
+        <div class="loading-content">
+            <h1>DenizShop</h1>
+            <div class="loading-bar">
+                <div class="progress-bar"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function moveToNext(current, nextFieldId) {
+            if (current.value.length === 1) {
+                document.getElementById(nextFieldId).focus();
+            }
+        }
+
+        function moveToPrev(event, nextFieldId) {
+            if (event.key === "Backspace" && event.target.value === "") {
+                const nextField = document.getElementById(nextFieldId);
+                if (nextField) {
+                    nextField.focus();
+                    nextField.value = ''; 
+                }
+            }
+        }
+
+        function validateCode() {
+            const input1 = document.getElementById('input1').value;
+            const input2 = document.getElementById('input2').value;
+            const input3 = document.getElementById('input3').value;
+            const input4 = document.getElementById('input4').value;
+            const input5 = document.getElementById('input5').value;
+            const enteredCode = input1 + input2 + input3 + input4 + input5;
+
+            const correctCode = "12345";  // کد درست
+
+            const errorElement = document.getElementById('error');
+            if (enteredCode !== correctCode) {
+                errorElement.style.display = 'block';
+            } else {
+                errorElement.style.display = 'none';
+                // انتقال به صفحه profile.html
+                window.location.href = "profile.html";
+            }
+        }
+
+        let timeLeft = 180;
+        const timerElement = document.getElementById('timer');
+        const resendLink = document.getElementById('resend');
+
+        const countdown = setInterval(() => {
+            let minutes = Math.floor(timeLeft / 60);
+            let seconds = timeLeft % 60;
+            seconds = seconds < 10 ? '0' + seconds : seconds;
+            timerElement.textContent = `${minutes}:${seconds} مانده تا دریافت مجدد کد`;
+
+            if (timeLeft <= 0) {
+                clearInterval(countdown);
+                timerElement.style.display = 'none';
+                resendLink.style.display = 'inline';
+            }
+
+            timeLeft--;
+        }, 1000);
+
+        document.addEventListener("DOMContentLoaded", function() {
+    const progressBar = document.querySelector('.progress-bar');
+    progressBar.addEventListener('animationend', function() {
+        // حذف صفحه لودینگ و نمایش محتوا
+        document.getElementById('loading').style.display = 'none';
+        document.getElementById('body').classList.add('visible');
+
+        // فعال کردن اسکرول
+        document.body.classList.remove('loading-active');
+    });
+});
+    </script>
+
+</body>
+</html>

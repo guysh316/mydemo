@@ -1,0 +1,195 @@
+/* استایل‌های عمومی */
+body {
+    font-family: 'Vazir', Arial, sans-serif;
+    background-color: #f3f4f6;
+    color: #2d3748;
+    direction: rtl;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    overflow-x: hidden; /* جلوگیری از اسکرول افقی */
+}
+
+@font-face {
+    font-family: Vazir;
+    font-style: normal;
+    font-weight: normal;
+    src: url('fonts/Vazir.eot');
+    src: url('fonts/Vazir.eot?#iefix') format('embedded-opentype'), 
+    url('fonts/Vazir.woff2') format('woff2'), 
+    url('fonts/Vazir.woff') format('woff'), 
+    url('fonts/Vazir.ttf') format('truetype');
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* بهبود محصول */
+.product-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(135deg, #12c2e9, #c471ed, #f64f59);
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    color: white;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+    transition: all 0.3s ease;
+}
+
+.product-container:hover {
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
+}
+
+.product-container img {
+    max-width: 350px;
+    width: 100%;
+    border-radius: 15px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.product-container img:hover {
+    transform: scale(1.1);
+    filter: brightness(0.9);
+}
+
+.product-details {
+    max-width: 55%;
+    padding-right: 20px;
+}
+
+.product-details h1 {
+    font-size: 2.8em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.product-details p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.product-button {
+    display: inline-block;
+    background-color: #ffffff;
+    color: #ff6a00;
+    padding: 15px 30px;
+    border-radius: 30px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 5px 15px rgba(255, 106, 0, 0.3);
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-button:hover {
+    background-color: #ff6a00;
+    color: white;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(255, 106, 0, 0.5);
+}
+
+/* بهبود گالری */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+    filter: brightness(0.8);
+}
+
+.gallery-item p {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.2em;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    margin: 0;
+    transition: background 0.3s ease;
+}
+
+.gallery-item p:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.dee{
+    font-size: 13px;
+    background-color: cornflowerblue;
+    color: white;
+    padding: 10px;
+    border-radius: 11px;
+}
+
+/* Media Queries برای ریسپانسیو کردن صفحه */
+@media (max-width: 992px) {
+    .product-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-details {
+        max-width: 100%;
+        padding-right: 0;
+        text-align: center;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .product-details h1 {
+        font-size: 2.2em;
+    }
+
+    .product-details p {
+        font-size: 1.1em;
+    }
+
+    .product-button {
+        padding: 10px 20px;
+        font-size: 1em;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+}

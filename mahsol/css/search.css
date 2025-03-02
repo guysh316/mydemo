@@ -1,0 +1,219 @@
+body {
+    font-family: 'Vazir', Arial, sans-serif;
+    margin: 0;
+    direction: rtl;
+    background-color: #f4f4f4;
+}
+
+.container {
+    display: flex;
+    margin: 20px;
+}
+
+.mortabet {
+    width: 200px;
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-left: 1px solid #ddd;
+    position: relative;
+    bottom: 228px;
+}
+
+.mortabet h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.mortabet ul {
+    list-style-type: none;
+}
+
+.mortabet ul li {
+    margin-bottom: 10px;
+}
+
+.mortabet ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+}
+
+.mortabetul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    width: 100%;
+    padding: 0 20px;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    background-color: #fff;
+    width: 22%;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    margin: 20px;
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.product-card h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 14px;
+    color: #333;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #999;
+    margin-right: 10px;
+}
+
+.new-price {
+    font-weight: bold;
+    color: #d00000;
+}
+
+.special-sale, .custom-order {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #f00;
+    color: #fff;
+    padding: 5px;
+    font-size: 12px;
+    border-radius: 4px;
+}
+
+.custom-order {
+    background-color: #ff69b4;
+}
+
+@media (max-width: 768px){
+    .mortabet{
+        display: none;
+    }
+
+    .product-card {
+        background-color: #fff;
+        width: 100%;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        text-align: center;
+        position: relative;
+        margin-top: 20px;
+    }
+
+    body {
+        padding-bottom: 74px;
+    }
+}
+
+/* غیرفعال کردن اسکرول */
+body.loading-active {
+    overflow: hidden;
+}
+
+#loading {
+    width: 100%;
+    height: 100%;
+    background-color: #282c34;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    font-family: 'Gwendolyn';
+}
+
+.loading-content {
+    text-align: center;
+    color: white;
+    animation: fadeIn 1s ease-in-out;
+}
+
+h1 {
+    font-size: 48px;
+    margin: 0;
+    letter-spacing: 2px;
+}
+
+.loading-bar {
+    width: 100%;
+    max-width: 400px;
+    height: 6px;
+    background-color: #444;
+    margin-top: 20px;
+    overflow: hidden;
+    border-radius: 3px;
+}
+
+.progress-bar {
+    width: 0;
+    height: 100%;
+    background-color: #61dafb;
+    animation: loading 3s linear forwards;
+    border-radius: 3px;
+}
+
+@keyframes loading {
+    0% { width: 0; }
+    100% { width: 100%; }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+#content {
+    display: none;
+    padding: 20px;
+    text-align: center;
+    animation: contentFadeIn 1s ease-in-out;
+}
+
+@keyframes contentFadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* ریسپانسیو */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 36px;
+    }
+
+    .loading-bar {
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    .loading-bar {
+        max-width: 200px;
+    }
+}

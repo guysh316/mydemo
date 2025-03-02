@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> فروشگاه اینترنتی دنیزشاپ </title>
+    <link rel="stylesheet" href="css/profile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-geosearch/assets/css/leaflet.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/persian-datepicker@1.2.0/dist/css/persian-datepicker.min.css">
+    <link href="img/favicon/favicn.jpg" rel="icon">
+    <link href="https://fonts.googleapis.com/css2?family=Gwendolyn:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="profile-container">
+        <button class="toggle-sidebar-btn" onclick="toggleSidebar()"><img src="img/icon/menu-alt-1-svgrepo-com.svg"></button>
+        <div class="sidebar">
+            <div class="profile-header">
+                <p id="user-name">نام کاربر</p>
+                <p id="user-phone">۰۹۱۲۳۴۵۶۷۸۹</p>
+            </div>
+            <ul>
+                <li><a href="#" onclick="toggleSection('overview')"><img src="img/profile/profile-svgrepo-com.svg"/> نگاه کلی</a></li>
+                <li><a href="#" onclick="toggleSection('wallet')"><img src="img/profile/wallet-svgrepo-com.svg"/> کیف پول</a></li>
+                <li><a href="#" onclick="toggleSection('orders')"><img src="img/profile/box-svgrepo-com.svg"/> سفارشات من </a></li>
+                <li><a href="#" onclick="toggleSection('favorites')"><img src="img/profile/heart-alt-svgrepo-com.svg"/> محصولات مورد علاقه</a></li>
+                <li><a href="#" onclick="toggleSection('bookmarked-articles')"><img src="img/profile/save-2-svgrepo-com.svg"/> مقالات نشان شده</a></li>
+                <li><a href="#" onclick="toggleSection('support-tickets')"><img src="img/profile/ticket-simple-svgrepo-com.svg"/> تیکت‌های پشتیبانی</a></li>
+                <li><a href="#" onclick="toggleSection('edit-profile')"><img src="img/profile/edit-profile-svgrepo-com.svg"/> ویرایش حساب کاربری</a></li>
+                <li><a href="#" onclick="toggleSection('addresses')"><img src="img/profile/location-1-svgrepo-com.svg"/> آدرس‌های من</a></li>
+                <li><a href="#" onclick="toggleSection('logout')"><img src="img/profile/logout-svgrepo-com.svg"/> خروج حساب کاربری</a></li>
+            </ul>
+        </div>        
+        <div class="content">
+            <section id="overview" class="content-section active">
+                <h2>نگاه کلی</h2>
+                <div class="overview-cards">
+                    <div class="card orange">
+                        <img src="img/profile/box-svgrepo-com.svg"/>
+                        <p>0 محصول</p>
+                        <p>شما سفارش داده‌اید</p>
+                    </div>
+                    <div class="card red">
+                        <img src="img/profile/save-2-svgrepo-com.svg"/>
+                        <p>0 تیکت</p>
+                        <p>درخواست‌های پشتیبانی</p>
+                    </div>
+                    <div class="card green">
+                        <img src="img/profile/wallet-svgrepo-com.svg"/>
+                        <p>0 تومان</p>
+                        <p>موجودی کیف پول شما</p>
+                    </div>
+                    <div class="card pink">
+                        <img src="img/profile/heart-alt-svgrepo-com.svg"/>
+                        <p>0 محصول</p>
+                        <p>مورد علاقه شما</p>
+                    </div>
+                </div>
+                <div class="recent-orders">
+                    <h3>سفارشات اخیر</h3>
+                    <div class="order-cards">
+                        <div class="order-card">
+                            <img src="img/gaming/_2d8c7281-efbc-4417-a429-87b73de8e1b1.jpeg" alt="محصول 1">
+                            <div class="order-details">
+                                <p class="product-name">نام محصول 1</p>
+                                <p class="product-price">2,899,000 تومان</p>
+                            </div>
+                        </div>
+                        <div class="order-card">
+                            <img src="img/porfrosh/_16e44abd-c406-4267-909e-c9d75c35c1aa.jpeg" alt="محصول 2">
+                            <div class="order-details">
+                                <p class="product-name">نام محصول 2</p>
+                                <p class="product-price">5,499,000 تومان</p>
+                            </div>
+                        </div>
+                        <div class="order-card">
+                            <img src="img/pishnahad/_0298bf05-2749-4bda-86cb-13f3326c5a14.jpeg" alt="محصول 3">
+                            <div class="order-details">
+                                <p class="product-name">نام محصول 3</p>
+                                <p class="product-price">3,839,000 تومان</p>
+                            </div>
+                        </div>
+                        <div class="order-card">
+                            <img src="img/gaming/_1c6d1ddf-1fdf-4eac-8a19-9bc29bcada11.jpeg" alt="محصول 2">
+                            <div class="order-details">
+                                <p class="product-name">نام محصول 2</p>
+                                <p class="product-price">5,499,000 تومان</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>                        
+
+            <section id="wallet" class="content-section">
+                <h2>کیف پول من</h2>
+                <div class="wallet-info">
+                    <h3>موجودی کیف پول</h3>
+                    <p>موجودی فعلی: <span class="current-balance">0 تومان</span></p>
+                </div>
+                <div class="wallet-container">
+                    <div class="wallet-transaction">
+                        <h3>تاریخچه تراکنش‌های شما</h3>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>تاریخ</th>
+                                    <th>مبلغ</th>
+                                    <th>درگاه پرداخت</th>
+                                    <th>کد پیگیری</th>
+                                    <th>وضعیت</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>۱۴۰۳/۴/۲۵ ساعت ۲۰:۱۹</td>
+                                    <td>۲,۰۰۰,۰۰۰ تومان</td>
+                                    <td>زیبال</td>
+                                    <td>----</td>
+                                    <td class="failed">ناموفق</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="wallet-recharge">
+                        <h3>افزایش موجودی کیف پول</h3>
+                        <label for="amount">مبلغ به تومان (حداقل بالای ۵ هزار تومان)</label>
+                        <input type="number" id="amount" name="amount" min="5000" step="1000" required>
+                        <label for="payment-gateway">انتخاب درگاه پرداخت</label>
+                        <select id="payment-gateway" name="payment-gateway">
+                            <option value="meli"> بانک ملی </option>
+                            <option value="saderat"> بانک صادرات </option>
+                            <option value="zarin pal"> زرین پال </option>
+                        </select>
+                        <button type="submit">پرداخت و افزایش موجودی</button>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="orders" class="content-section">
+                <h2>سفارشات من</h2>
+                <div class="tabs">
+                    <button class="tablinks" onclick="openTab(event, 'current')"> جاری </button>
+                    <button class="tablinks" onclick="openTab(event, 'delivered')"> تحویل شده </button>
+                    <button class="tablinks" onclick="openTab(event, 'returned')"> مرجوع شده </button>
+                    <button class="tablinks" onclick="openTab(event, 'canceled')"> لغو شده </button>
+                </div>
+            
+                <div id="current" class="tabcontent">
+                    <p>هنوز هیچ سفارشی ندارید</p>
+                </div>
+            
+                <div id="delivered" class="tabcontent" style="display:none;">
+                    <p>سفارشات تحویل شده</p>
+                </div>
+            
+                <div id="returned" class="tabcontent" style="display:none;">
+                    <p>سفارشات مرجوع شده</p>
+                </div>
+            
+                <div id="canceled" class="tabcontent" style="display:none;">
+                    <p>سفارشات لغو شده</p>
+                </div>
+            </section>
+            
+            <section id="support-tickets" class="content-section">
+                <div class="support-header">
+                    <h2>تیکت‌های پشتیبانی</h2>
+                    <button class="new-ticket-btn" onclick="openModal()"><img src="img/profile/plus-svgrepo-com.svg"/> تیکت جدید</button>
+                </div>
+                <div class="ticket">
+                    <p>تاکنون تیکتی ثبت نشده است.</p>
+                </div>
+            </section>
+
+            <section id="favorites" class="content-section">
+                <h2>محصولات مورد علاقه</h2>
+                <p> هیچ محصولی رو به علاقه مندی اضافه نکردید </p>
+            </section>
+            <section id="bookmarked-articles" class="content-section">
+                <h2>مقالات نشان شده</h2>
+                <p> هنوز مقاله ای را نشان دار نکردید </p>
+            </section>
+            
+            <section id="edit-profile" class="content-section">
+                <div class="container">
+                    <div class="edit-header">
+                        <h2>ویرایش حساب کاربری</h2>
+                        <p>می‌توانید اطلاعات حساب کاربری خود را در این بخش ویرایش کنید.</p>
+                    </div>
+                    <div class="main-content">
+                        <div class="profile-section">
+                            <h3>اطلاعات حساب من</h3>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="first-name"> نام و نام خانوادگی </label>
+                                    <span id="first-name"> علی محمدی </span>
+                                    <button class="btn edit-btn" data-target="#modal-first-name">ویرایش</button>
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone-number"> شماره موبایل </label>
+                                    <span id="phone-number"> 0912345678 </span>
+                                    <button class="btn edit-btn" data-target="#modal-phone-number">ویرایش</button>
+                                </div>
+                                <div class="form-group">
+                                    <label for="password"> رمز عبور </label>
+                                    <span id="password"> *******</span>
+                                    <button class="btn edit-btn" data-target="#modal-password">ویرایش</button>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="email">ایمیل</label>
+                                    <span id="email">example@example.com</span>
+                                    <button class="btn edit-btn" data-target="#modal-email">ویرایش</button>
+                                </div>
+                                <div class="form-group">
+                                    <label for="national-id"> تاریخ تولد  </label>
+                                    <span id="national-id"> 1385/2/24 </span>
+                                    <button class="btn edit-btn" data-target="#happy">ویرایش</button>
+                                </div>
+                                <div class="form-group">
+                                    <label for="national-id">کد ملی</label>
+                                    <span id="national-id">1234567890</span>
+                                    <button class="btn edit-btn" data-target="#modal-national-id">ویرایش</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Modals -->
+                <div id="modal-first-name" class="modal">
+                    <div class="modal-content">
+                        <span class="close" data-target="#modal-first-name">&times;</span>
+                        <h2>ویرایش  نام و نام خانوادگی</h2>
+                        <form>
+                            <div class="form-group">
+                                <label for="modal-first-name-input">  </label>
+                                <input type="text" id="modal-first-name-input" name="first-name">
+                            </div>
+                            <button type="submit" class="btn save-btn">ذخیره</button>
+                        </form>
+                    </div>
+                </div>
+                <div id="modal-last-name" class="modal">
+                    <div class="modal-content">
+                        <span class="close" data-target="#modal-last-name">&times;</span>
+                        <h2>ویرایش نام خانوادگی</h2>
+                        <form>
+                            <div class="form-group">
+                                <label for="modal-last-name-input">نام خانوادگی</label>
+                                <input type="text" id="modal-last-name-input" name="last-name">
+                            </div>
+                            <button type="submit" class="btn save-btn">ذخیره</button>
+                        </form>
+                    </div>
+                </div>
+                <div id="modal-phone-number" class="modal">
+                    <div class="modal-content">
+                        <span class="close" data-target="#modal-phone-number">&times;</span>
+                        <h2>ویرایش شماره موبایل</h2>
+                        <form>
+                            <div class="form-group">
+                                <label for="modal-phone-number-input">شماره موبایل</label>
+                                <input type="text" id="modal-phone-number-input" name="phone-number">
+                            </div>
+                            <button type="submit" class="btn save-btn">ذخیره</button>
+                        </form>
+                    </div>
+                </div>
+                <div id="modal-email" class="modal">
+                    <div class="modal-content">
+                        <span class="close" data-target="#modal-email">&times;</span>
+                        <h2>ویرایش ایمیل</h2>
+                        <form>
+                            <div class="form-group">
+                                <label for="modal-email-input">ایمیل</label>
+                                <input type="email" id="modal-email-input" name="email">
+                            </div>
+                            <button type="submit" class="btn save-btn">ذخیره</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div id="happy" class="modal">
+                    <div class="modal-content">
+                        <span class="close" data-target="#happy">&times;</span>
+                        <h2>ویرایش تاریخ تولد</h2>
+                        <form>
+                            <div class="form-group">
+                                <label for="happy-date-input">تاریخ تولد</label>
+                                <input type="text" id="happy-date-input" name="happy">
+                            </div>
+                            <button type="submit" class="btn save-btn">ذخیره</button>
+                        </form>
+                    </div>
+                </div>                
+
+                <div id="modal-national-id" class="modal">
+                    <div class="modal-content">
+                        <span class="close" data-target="#modal-national-id">&times;</span>
+                        <h2>ویرایش کد ملی</h2>
+                        <form>
+                            <div class="form-group">
+                                <label for="modal-national-id-input">کد ملی</label>
+                                <input type="text" id="modal-national-id-input" name="national-id">
+                            </div>
+                            <button type="submit" class="btn save-btn">ذخیره</button>
+                        </form>
+                    </div>
+                </div>
+                <div id="modal-password" class="modal">
+                    <div class="modal-content">
+                        <span class="close" data-target="#modal-password">&times;</span>
+                        <h2>تغییر کلمه عبور</h2>
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="current-password">کلمه عبور فعلی</label>
+                                    <input type="password" id="current-password" name="current-password">
+                                </div>
+                                <div class="form-group">
+                                    <label for="new-password">کلمه عبور جدید</label>
+                                    <input type="password" id="new-password" name="new-password">
+                                </div>
+                                <div class="form-group">
+                                    <label for="confirm-password">تکرار کلمه عبور جدید</label>
+                                    <input type="password" id="confirm-password" name="confirm-password">
+                                </div>
+                            </div>
+                            <button type="submit" class="btn save-btn">ذخیره</button>
+                        </form>
+                    </div>
+                </div>
+            </section>                        
+            
+            <section id="addresses" class="content-section">
+                <h2> آدرس من </h2>
+                <div id="no-address"> تاکنون آدرسی ثبت نشده </div>
+                <div id="address-list"></div>
+                <button onclick="openAddressModal()" style="margin-top: 20px;">افزودن آدرس جدید</button>
+            </section>
+        
+            <div id="addressModal" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeAddressModal()">&times;</span>
+                    <h2>انتخاب مکان</h2>
+                    <div id="map"></div>
+                    <button onclick="confirmLocation()" style="margin-top: 20px;"> تایید و ادامه </button>
+                </div>
+            </div>
+        
+            <div id="formModal" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeFormModal()">&times;</span>
+                    <h2>افزودن / ویرایش آدرس</h2>
+                    <div id="formModalMessage" style="color: red; font-size: 16px;"></div>
+                    <form id="addressForm">
+                        <label for="address">آدرس:</label>
+                        <input type="text" id="address" name="address" required>
+                        <label for="state">استان:</label>
+                        <input type="text" id="state" name="state" required>
+                        <label for="city">شهر:</label>
+                        <input type="text" id="city" name="city" required>
+                        <label for="district">محله:</label>
+                        <input type="text" id="district" name="district" required>
+                        <label for="street">خیابان:</label>
+                        <input type="text" id="street" name="street" required>
+                        <label for="plaque">پلاک:</label>
+                        <input type="text" id="plaque" name="plaque" required>
+                        <label for="unit">واحد:</label>
+                        <input type="text" id="unit" name="unit" required>
+                        <label for="postalCode">کد پستی:</label>
+                        <input type="text" id="postalCode" name="postalCode" required>
+                        <label for="recipientFirstName">نام گیرنده:</label>
+                        <input type="text" id="recipientFirstName" name="recipientFirstName" required>
+                        <label for="recipientLastName">نام خانوادگی گیرنده:</label>
+                        <input type="text" id="recipientLastName" name="recipientLastName" required>
+                        <label for="phoneNumber">شماره موبایل:</label>
+                        <input type="text" id="phoneNumber" name="phoneNumber" required>
+                        <button type="button" onclick="saveAddress()">ذخیره</button>
+                    </form>
+                </div>
+            </div>                        
+            
+            <section id="logout" class="content-section">
+                <h2>خروج از حساب کاربری</h2>
+                <p>آیا مطمئن هستید که می‌خواهید خارج شوید؟</p>
+                <button onclick="logout()">خروج</button>
+            </section>
+        </div>
+    </div>
+
+       <!-- تیکت Modal -->
+    <div id="ticketModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>تیکت جدید</h2>
+            <form id="ticket-form">
+                <label for="ticket-title">عنوان</label>
+                <input type="text" id="ticket-title" name="ticket-title">
+                
+                <label for="ticket-message">پیام</label>
+                <textarea id="ticket-message" name="ticket-message" rows="4"></textarea>
+                
+                <label>فایل پیوست</label>
+                <div id="file-upload-wrapper">
+                    <label for="ticket-file" class="custom-file-upload">انتخاب فایل</label>
+                    <input type="file" id="ticket-file" name="ticket-file" onchange="showFileName()">
+                    <span id="file-name"></span>
+                </div>
+                <button type="submit">ارسال تیکت</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet-geosearch/dist/bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/persian-datepicker@1.2.0/dist/js/persian-datepicker.min.js"></script>
+    <script>
+      // توابع نمایش و پنهان سازی بخش‌های مختلف
+      function toggleSection(sectionId) {
+            const sections = document.querySelectorAll('.content-section');
+            sections.forEach(section => {
+                section.classList.remove('active');
+            });
+            document.getElementById(sectionId).classList.add('active');
+        }
+
+        // تابع خروج از حساب کاربری
+        function logout() {
+            window.location.href = 'login.html'; // بازگشت به صفحه ورود
+        }
+
+        // توابع باز و بسته کردن modal
+        function openModal() {
+            document.getElementById("ticketModal").style.display = "block";
+        }
+
+        function closeModal() {
+            document.getElementById("ticketModal").style.display = "none";
+        }
+
+        function openProfileModal() {
+            document.getElementById("profileModal").style.display = "block";
+        }
+
+        function closeProfileModal() {
+            document.getElementById("profileModal").style.display = "none";
+        }
+
+        document.addEventListener('DOMContentLoaded', loadAddresses);
+
+let map;
+let marker;
+let selectedLocation = null;
+
+function openAddressModal() {
+    var modal = document.getElementById("addressModal");
+    modal.style.display = "block";
+
+    if (!map) {
+        map = L.map('map').setView([35.6892, 51.3890], 13); // Tehran coordinates
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 18,
+        }).addTo(map);
+
+        map.on('click', function(e) {
+            selectedLocation = e.latlng;
+            if (marker) {
+                marker.setLatLng(e.latlng);
+            } else {
+                marker = L.marker(e.latlng).addTo(map);
+            }
+        });
+
+        const provider = new window.GeoSearch.OpenStreetMapProvider();
+        const searchControl = new window.GeoSearch.GeoSearchControl({
+            provider: provider,
+            style: 'bar',
+            showMarker: false,
+            updateMap: true,
+        });
+        map.addControl(searchControl);
+
+        map.on('geosearch/showlocation', function(result) {
+            const { location } = result;
+            selectedLocation = { lat: location.y, lng: location.x };
+            if (marker) {
+                marker.setLatLng([location.y, location.x]);
+            } else {
+                marker = L.marker([location.y, location.x]).addTo(map);
+            }
+        });
+    } else {
+        setTimeout(() => {
+            map.invalidateSize();
+        }, 100);
+    }
+}
+
+function closeAddressModal() {
+    var modal = document.getElementById("addressModal");
+    modal.style.display = "none";
+}
+
+function confirmLocation() {
+    closeAddressModal();
+    reverseGeocode(selectedLocation.lat, selectedLocation.lng);
+}
+
+function closeFormModal() {
+    var formModal = document.getElementById("formModal");
+    formModal.style.display = "none";
+}
+
+function reverseGeocode(lat, lng) {
+    fetch(`https://nominatim.openstreetmap.org/reverse?format=json&lat=${lat}&lon=${lng}&accept-language=fa`)
+        .then(response => response.json())
+        .then(data => {
+            const address = data.address;
+            const fullAddress = (address.state || '') + '، ' + (address.city || '') + '، ' + (address.neighbourhood || '') + '، ' + (address.road || '');
+            document.getElementById("address").value = fullAddress;
+            document.getElementById("state").value = address.state || '';
+            document.getElementById("city").value = address.city || '';
+            document.getElementById("district").value = address.neighbourhood || '';
+            document.getElementById("street").value = address.road || '';
+            
+            var formModal = document.getElementById("formModal");
+            formModal.style.display = "block";
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            alert('خطا در دریافت آدرس. لطفا دوباره امتحان کنید.');
+        });
+}
+
+function saveAddress() {
+    const addressForm = document.getElementById('addressForm');
+    const formData = new FormData(addressForm);
+    const addressData = {
+        address: formData.get('address'),
+        state: formData.get('state'),
+        city: formData.get('city'),
+        district: formData.get('district'),
+        street: formData.get('street'),
+        plaque: formData.get('plaque'),
+        unit: formData.get('unit'),
+        postalCode: formData.get('postalCode'),
+        recipientFirstName: formData.get('recipientFirstName'),
+        recipientLastName: formData.get('recipientLastName'),
+        phoneNumber: formData.get('phoneNumber')
+    };
+
+    // Check if all required fields are filled
+    for (let key in addressData) {
+        if (addressData[key] === '') {
+            alert('لطفا فرم را کامل تکمیل کنید.');
+            return;
+        }
+    }
+
+    // Check if phone number is 11 digits
+    if (!/^\d{11}$/.test(addressData.phoneNumber)) {
+        alert('شماره موبایل باید ۱۱ رقم باشد.');
+        return;
+    }
+
+    // Check if postal code is 10 digits
+    if (!/^\d{10}$/.test(addressData.postalCode)) {
+        alert('کد پستی باید ۱۰ رقم باشد.');
+        return;
+    }
+
+    // Check if fields are in Persian
+    const persianRegex = /^[\u0600-\u06FF\s]+$/;
+    if (!persianRegex.test(addressData.address) ||
+        !persianRegex.test(addressData.state) ||
+        !persianRegex.test(addressData.city) ||
+        !persianRegex.test(addressData.recipientFirstName) ||
+        !persianRegex.test(addressData.recipientLastName)) {
+        alert('لطفا از زبان فارسی استفاده کنید.');
+        return;
+    }
+
+    let addresses = JSON.parse(localStorage.getItem('addresses')) || [];
+    const editIndex = addressForm.dataset.index;
+    if (editIndex !== undefined && editIndex !== "") {
+        addresses[editIndex] = addressData;
+    } else {
+        addresses.push(addressData);
+    }
+    localStorage.setItem('addresses', JSON.stringify(addresses));
+    
+    addressForm.reset();
+    delete addressForm.dataset.index;
+    closeFormModal();
+    displayAddresses();
+}
+
+function loadAddresses() {
+    displayAddresses();
+}
+
+function displayAddresses() {
+    const addressList = document.getElementById('address-list');
+    const noAddressMessage = document.getElementById('no-address');
+    addressList.innerHTML = '';
+
+    const addresses = JSON.parse(localStorage.getItem('addresses')) || [];
+    
+    if (addresses.length === 0) {
+        noAddressMessage.style.display = 'block';
+    } else {
+        noAddressMessage.style.display = 'none';
+        for (let i = 0; i < addresses.length; i++) {
+            const address = addresses[i];
+            const addressItem = document.createElement('div');
+            addressItem.classList.add('address-item');
+
+            const addressHTML = `
+                <span class="address-details">
+                    <span>${address.address}</span><br>
+                    <span>${address.city}, ${address.state}</span><br>
+                    <span> <img src="img/profile/email-svgrepo-com.svg"> ${address.postalCode}</span><br>
+                    <span> <img src="img/profile/phone-svgrepo-com.svg"> ${address.phoneNumber}</span><br>
+                    <span> <img src="img/profile/profile-2-svgrepo-com.svg"> ${address.recipientFirstName} ${address.recipientLastName}</span>
+                </span>
+                <span class="address-actions">
+                    <a href="#" onclick="editAddress(${i})">ویرایش</a>
+                    <a href="#" onclick="deleteAddress(${i})">حذف</a>
+                </span>
+            `;
+            addressItem.innerHTML = addressHTML;
+            addressList.appendChild(addressItem);
+
+            const mapContainer = document.createElement('div');
+            mapContainer.id = 'map-' + i;
+            mapContainer.className = 'map';
+            mapContainer.style.height = '200px';
+            addressItem.appendChild(mapContainer);
+
+            const map = L.map(mapContainer).setView([35.6892, 51.3890], 13); // Tehran coordinates
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                maxZoom: 18,
+            }).addTo(map);
+
+            L.marker([35.6892, 51.3890]).addTo(map)
+                .bindPopup(address.address).openPopup();
+        }
+    }
+}
+
+function deleteAddress(index) {
+    let addresses = JSON.parse(localStorage.getItem('addresses')) || [];
+    addresses.splice(index, 1);
+    localStorage.setItem('addresses', JSON.stringify(addresses));
+    displayAddresses();
+}
+
+function editAddress(index) {
+    const addresses = JSON.parse(localStorage.getItem('addresses')) || [];
+    const address = addresses[index];
+
+    document.getElementById('address').value = address.address;
+    document.getElementById('state').value = address.state;
+    document.getElementById('city').value = address.city;
+    document.getElementById('district').value = address.district;
+    document.getElementById('street').value = address.street;
+    document.getElementById('plaque').value = address.plaque;
+    document.getElementById('unit').value = address.unit;
+    document.getElementById('postalCode').value = address.postalCode;
+    document.getElementById('recipientFirstName').value = address.recipientFirstName;
+    document.getElementById('recipientLastName').value = address.recipientLastName;
+    document.getElementById('phoneNumber').value = address.phoneNumber;
+
+    document.getElementById('addressForm').dataset.index = index;
+    openFormModal();
+}
+
+function clearAddresses() {
+    localStorage.removeItem('addresses');
+    displayAddresses();
+}
+
+function openFormModal() {
+    document.getElementById('formModal').style.display = 'block';
+    // Add message to form modal
+    document.getElementById('formModalMessage').innerText = 'لطفا فرم را به زبان فارسی تکمیل کنید.';
+}
+
+function closeFormModal() {
+    document.getElementById('formModal').style.display = 'none';
+}
+
+        function showFileName() {
+    const fileInput = document.getElementById('ticket-file');
+    const fileName = fileInput.files[0].name;
+    document.getElementById('file-name').textContent = fileName;
+}
+function openTab(evt, tabName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(tabName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+// Open the first tab by default
+document.getElementsByClassName("tablinks").click();
+function updateOrderCounts(currentCount, deliveredCount, returnedCount, canceledCount) {
+    document.querySelector(".tablinks[onclick*='current']").innerHTML = `جاری (${currentCount})`;
+    document.querySelector(".tablinks[onclick*='delivered']").innerHTML = `تحویل شده (${deliveredCount})`;
+    document.querySelector(".tablinks[onclick*='returned']").innerHTML = `مرجوع شده (${returnedCount})`;
+    document.querySelector(".tablinks[onclick*='canceled']").innerHTML = `لغو شده (${canceledCount})`;
+}
+
+// Call the function with the actual counts
+updateOrderCounts(0, 0, 0, 0);
+
+document.querySelectorAll('.edit-btn').forEach(button => {
+        button.addEventListener('click', () => {
+            const modal = document.querySelector(button.getAttribute('data-target'));
+            modal.style.display = 'block';
+        });
+    });
+
+    document.querySelectorAll('.close').forEach(span => {
+        span.addEventListener('click', () => {
+            const modal = document.querySelector(span.getAttribute('data-target'));
+            modal.style.display = 'none';
+        });
+    });
+
+    window.addEventListener('click', event => {
+        if (event.target.classList.contains('modal')) {
+        }
+    });
+
+    $(document).ready(function() {
+        $('#happy-date-input').persianDatepicker({
+            format: 'YYYY/MM/DD'
+        });
+    });
+
+    function toggleSidebar() {
+    var sidebar = document.querySelector('.sidebar');
+    sidebar.classList.toggle('show');
+}
+
+    </script>
+</body>
+</html>

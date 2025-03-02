@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>فروشگاه اینترنتی دنیزشاپ</title>
+    <meta content="دنیز شاپ بهترین سایت فروشگاهی" name="description">
+    <meta content="فروشگاه دنیز وسایل های الکترونیکی و موبایل و ماشین و غیره" name="keywords">
+
+    <!-- CSS FILE -->
+    <link rel="stylesheet" href="css/ccd.css">
+
+    <!-- Favicons -->
+    <link href="img/favicon/favicn.jpg" rel="icon">
+
+    <link href="https://fonts.googleapis.com/css2?family=Gwendolyn:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1> <img src="img/icon/right-2-svgrepo-com.svg"> پرداخت </h1>
+            <a href="index.html" class="logo"> دنیزشاپ </a>
+        </header>
+        <div class="content">
+            <div class="right">
+                <h2>انتخاب روش پرداخت</h2>
+                <form id="payment-form">
+                    <label>
+                        <input type="radio" name="payment-method" value="wallet">
+                        <span class="icon wallet-icon"></span>کیف پول <span class="amount">1,000 تومان</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="payment-method" value="online" checked>
+                        <span class="icon online-icon"></span>پرداخت اینترنتی
+                    </label>
+                    <label>
+                        <input type="radio" name="payment-method" value="card">
+                        <span class="icon card-icon"></span>پرداخت با کارت اعتباری
+                    </label>
+                </form>
+                <div class="discount-code">
+                    <button id="discount-btn">انتخاب یا وارد کردن کد تخفیف</button>
+                    <input type="text" id="discount-input" placeholder="کد تخفیف خود را وارد کنید">
+                </div>
+                <div class="gift-code">
+                    <button id="gift-btn">وارد کردن کد هدیه</button>
+                    <input type="text" id="gift-input" placeholder="کد هدیه خود را وارد کنید">
+                </div>
+                <div class="order-summary">
+                    <h3>خلاصه سفارش</h3>
+                    <div class="summary-details" onclick="toggleDetails()">
+                        <img src="img/icon/calendar-lines-svgrepo-com.svg">
+                        جمعه 9 مرداد از ساعت 9 تا 22
+                    </div>
+                    <div class="details" id="orderDetails">
+                        <div class="product">
+                            <img src="img/porfrosh/_16e44abd-c406-4267-909e-c9d75c35c1aa.jpeg" alt="Product Image">
+                            <div>
+                                <div class="product-name"></div>
+                                <div>قیمت: 500,000 تومان</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="left">
+                <ul>
+                    <li>قیمت کالاها: <span class="price">1,500,000 تومان</span></li>
+                    <li>هزینه ارسال: <span class="shipping">49,000 تومان</span></li>
+                    <li>تخفیف کالاها: <span class="discount">45,000 تومان</span></li>
+                    <li>سود شما از خرید: <span class="savings">45,000 تومان (27%)</span></li>
+                    <li>قابل پرداخت: <span class="total">1,144,000 تومان</span></li>
+                </ul>
+                <button class="pay-btn">پرداخت</button>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="loading">
+        <div class="loading-content">
+            <h1>DenizShop</h1>
+            <div class="loading-bar">
+                <div class="progress-bar"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleDetails() {
+            var details = document.getElementById("orderDetails");
+            if (details.style.display === "none" || details.style.display === "") {
+                details.style.display = "block";
+            } else {
+                details.style.display = "none";
+            }
+        }
+
+        document.getElementById('discount-btn').addEventListener('click', function() {
+            var input = document.getElementById('discount-input');
+            input.style.display = input.style.display === 'none' || input.style.display === '' ? 'block' : 'none';
+        });
+
+        document.getElementById('gift-btn').addEventListener('click', function() {
+            var input = document.getElementById('gift-input');
+            input.style.display = input.style.display === 'none' || input.style.display === '' ? 'block' : 'none';
+        });
+
+        document.addEventListener('DOMContentLoaded', function () {
+    // بارگذاری اطلاعات ذخیره شده
+    function loadOrderData() {
+        const savedData = localStorage.getItem('orderData');
+        if (savedData) {
+            return JSON.parse(savedData);
+        }
+        return {};
+    }
+
+    // نمایش اطلاعات در صفحه پرداخت
+    function displayOrderData() {
+        const data = loadOrderData();
+        
+        if (data.name) {
+            document.querySelector('.details .product-name').textContent = `مبل راحتی  ( ${data.numberOfProducts} عدد )`;
+            document.querySelector('.details').innerHTML += `
+                <div>نام: ${data.name}</div>
+                <div>آدرس: ${data.address}</div>
+            `;
+
+            document.querySelector('.price').textContent = `${data.totalPrice} تومان`;
+            document.querySelector('.discount').textContent = `${data.discount} تومان`;
+            document.querySelector('.savings').textContent = `${data.savings}`;
+            
+            const total = parseInt(data.totalPrice.replace(/,/g, '')) - parseInt(data.discount.replace(/,/g, '')) + parseInt(document.querySelector('.shipping').textContent.replace(/,/g, ''));
+            document.querySelector('.total').textContent = `${total.toLocaleString()} تومان`;
+        }
+    }
+
+    displayOrderData();
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+    const progressBar = document.querySelector('.progress-bar');
+    progressBar.addEventListener('animationend', function() {
+        // حذف صفحه لودینگ و نمایش محتوا
+        document.getElementById('loading').style.display = 'none';
+        document.getElementById('body').classList.add('visible');
+
+        // فعال کردن اسکرول
+        document.body.classList.remove('loading-active');
+    });
+});
+
+
+    </script>
+</body>
+</html>

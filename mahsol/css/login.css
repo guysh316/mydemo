@@ -1,0 +1,424 @@
+body {
+    margin: 0;
+    background-color: #f9f9f9;
+    direction: rtl;
+    font-family: 'Vazir', Arial, sans-serif;
+}
+
+@font-face {
+    font-family: Vazir;
+    font-style: normal;
+    font-weight: normal;
+    src: url('fonts/Vazir.eot');
+    src: url('fonts/Vazir.eot?#iefix') format('embedded-opentype'), 
+    url('fonts/Vazir.woff2') format('woff2'), 
+    url('fonts/Vazir.woff') format('woff'), 
+    url('fonts/Vazir.ttf') format('truetype');
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-side, .right-side {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.left-side {
+    background-color: #f9f9f9;
+    height: 100%;
+}
+
+.phone-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.phone-image {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.right-side {
+    background-color: #ffffff;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 100%;
+}
+
+.login-container {
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    position: relative;
+    padding: 20px;
+}
+
+.logo {
+    margin-bottom: 30px;
+}
+
+.logo img {
+    width: 100px;
+}
+
+.login-container h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+    position: relative;
+}
+
+.login-container h1::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: #ff4081;
+    margin: 0 auto;
+    position: absolute;
+    top: 45px;
+    left: 0;
+    right: 0;
+}
+
+.login-container .input-container {
+    position: relative;
+    width: calc(100% - 40px);
+    margin: 15px 20px;
+}
+
+.login-container input[type="email"], .login-container input[type="password"], .login-container input[type="text"] {
+    width: calc(100% - 40px);
+    padding: 15px;
+    margin: 0px 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-right: 7px;
+    font-family: 'Vazir';
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 0 20px;
+    margin-top: -10px;
+}
+
+.checkbox-container input {
+    margin-left: 10px;
+}
+
+.login-container button {
+    width: calc(100% - 40px);
+    padding: 15px;
+    margin: 15px 20px;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #16df7e;
+    font-family: 'Vazir';
+    box-shadow: 0 8px 28px rgba(22,223,126,0.45);
+}
+
+.login-container button .button-text {
+    flex-grow: 1;
+}
+
+.login-container button .icon {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.login-container button:hover {
+    background: #206bfb;
+    box-shadow: 0 8px 28px rgba(32, 107, 251, 0.45);
+}
+
+.login-container a.link {
+    display: block;
+    margin: 10px 20px;
+    color: #007bff;
+    text-decoration: none;
+    font-size: 14px;
+    position: relative;
+    padding-bottom: 5px;
+    border: 1px solid black;
+    padding: 20px;
+}
+
+.login-container a.link::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: aquamarine;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s;
+}
+
+.login-container a.link:hover::after {
+    width: 0;
+}
+
+.two-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 20px;
+}
+
+.two {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 14px;
+    position: relative;
+    padding-bottom: 5px;
+    margin: 0 10px;
+}
+
+.two::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: transparent;
+    border-bottom: 1px dashed #007bff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s;
+}
+.eye-icon {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.eye-icon img {
+    width: 20px;
+    margin-top: 5px;
+}
+
+.modal-container {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    max-width: 80%;
+}
+
+.close-button {
+    cursor: pointer;
+    color: #007bff;
+    font-weight: bold;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+/* استایل برای مودال */
+.modal-container {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.close-button {
+    margin-top: 20px;
+    cursor: pointer;
+    color: #333;
+}
+
+/* استایل برای موبایل */
+@media (max-width: 768px) {
+    .left-side {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .login-container h1 {
+        font-size: 20px;
+    }
+
+    
+    .login-container input[type="email"], .login-container input[type="password"], .login-container input[type="text"] {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    .login-container button {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    .login-container a.link, .two-container .two {
+        font-size: 12px;
+    }
+
+    .phone-image {
+        max-width: 250px;
+    }
+}
+
+.error-message {
+    color: red;
+    display: none;
+    margin-bottom: 10px;
+}
+.input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* غیرفعال کردن اسکرول */
+body.loading-active {
+    overflow: hidden;
+}
+
+#loading {
+    width: 100%;
+    height: 100%;
+    background-color: #282c34;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    font-family: 'Gwendolyn';
+}
+
+.loading-content {
+    text-align: center;
+    color: white;
+    animation: fadeIn 1s ease-in-out;
+}
+
+h1 {
+    font-size: 48px;
+    margin: 0;
+}
+
+.loading-bar {
+    width: 100%;
+    max-width: 400px;
+    height: 6px;
+    background-color: #444;
+    margin-top: 20px;
+    overflow: hidden;
+    border-radius: 3px;
+}
+
+.progress-bar {
+    width: 0;
+    height: 100%;
+    background-color: #61dafb;
+    animation: loading 3s linear forwards;
+    border-radius: 3px;
+}
+
+@keyframes loading {
+    0% { width: 0; }
+    100% { width: 100%; }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+#content {
+    display: none;
+    padding: 20px;
+    text-align: center;
+    animation: contentFadeIn 1s ease-in-out;
+}
+
+@keyframes contentFadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* ریسپانسیو */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 36px;
+    }
+
+    .loading-bar {
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    .loading-bar {
+        max-width: 200px;
+    }
+}

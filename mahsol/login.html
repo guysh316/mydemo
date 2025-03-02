@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>فروشگاه اینترنتی دنیزشاپ</title>
+    <link rel="stylesheet" href="css/login.css">
+    <link href="img/favicon/favicn.jpg" rel="icon">
+    <link href="https://fonts.googleapis.com/css2?family=Gwendolyn:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="left-side">
+            <div class="phone-container">
+                <img src="img/signup/_1526197f-c437-4f12-940d-332dda8f9fde.jpeg" alt="logo" class="phone-image">
+            </div>
+        </div>
+        <div class="right-side">
+            <div class="login-container">
+                <h1>ورود با شماره موبایل</h1>
+                <div class="input-container">
+                    <span id="error-message" class="error-message">شماره موبایل باید 11 رقم باشد</span>
+                    <input type="text" placeholder="شماره موبایل" id="phone-field" class="input-field" onkeypress="restrictInputToNumbers(event)">
+                </div>
+                <button onclick="login()">ورود</button>
+                <div class="two-container">
+                    <a href="index.html" class="two">بازگشت به سایت</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="loading">
+        <div class="loading-content">
+            <h1>DenizShop</h1>
+            <div class="loading-bar">
+                <div class="progress-bar"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function validatePhoneNumber(phoneNumber) {
+            const phoneRegex = /^\d{11}$/;
+            return phoneRegex.test(phoneNumber);
+        }
+
+        function login() {
+            const phoneNumber = document.getElementById('phone-field').value;
+            const errorMessage = document.getElementById('error-message');
+
+            if (validatePhoneNumber(phoneNumber)) {
+                errorMessage.style.display = 'none';
+                window.location.href = 'code.html'; // انتقال به صفحه code.html
+            } else {
+                errorMessage.style.display = 'block';
+            }
+        }
+
+        function restrictInputToNumbers(event) {
+            const keyCode = event.keyCode ? event.keyCode : event.which;
+            if (keyCode < 48 || keyCode > 57) {
+                event.preventDefault();
+            }
+        }
+
+        document.addEventListener("DOMContentLoaded", function() {
+    const progressBar = document.querySelector('.progress-bar');
+    progressBar.addEventListener('animationend', function() {
+        // حذف صفحه لودینگ و نمایش محتوا
+        document.getElementById('loading').style.display = 'none';
+        document.getElementById('body').classList.add('visible');
+
+        // فعال کردن اسکرول
+        document.body.classList.remove('loading-active');
+    });
+});
+    </script>
+
+</body>
+</html>

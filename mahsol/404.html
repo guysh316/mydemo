@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صفحه 404 - فروشگاه اینترنتی DenizShop</title>
+    
+    <!-- توضیحات متا برای سئو -->
+    <meta name="description" content="صفحه‌ای که به دنبال آن هستید پیدا نشد! اگر در جستجوی محصولات فروشگاه DenizShop هستید، به صفحه اصلی بازگردید و جدیدترین محصولات را مشاهده کنید.">
+    
+    <!-- کلمات کلیدی مرتبط -->
+    <meta name="keywords" content="فروشگاه اینترنتی, خرید آنلاین, DenizShop, محصولات دیجیتال, لوازم خانگی, مد و پوشاک, صفحه 404">
+    
+    <!-- تگ‌های Open Graph برای اشتراک‌گذاری در شبکه‌های اجتماعی -->
+    <meta property="og:title" content="صفحه 404 - فروشگاه اینترنتی DenizShop">
+    <meta property="og:description" content="صفحه مورد نظر شما پیدا نشد. لطفاً به فروشگاه DenizShop بازگردید.">
+    <meta property="og:image" content="https://denizshop.com/images/404.png">    
+    
+    <!-- آیکون سایت -->
+    <link rel="icon" href="img/favicon/favicn.jpg" type="image/x-icon">
+
+    <!-- لینک به صفحه اصلی برای سئو بهتر -->
+    <link rel="canonical" href="https://denizshop.com/404">
+
+    <link rel="stylesheet" href="css/404.css">
+</head>
+<body>
+    <div class="container">
+        <h1>404</h1>
+        <h2>صفحه‌ای که به دنبال آن هستید پیدا نشد!</h2>
+        <p>متاسفیم، اما صفحه مورد نظر شما وجود ندارد. لطفاً به صفحه اصلی بازگردید و محصولات جدید را بررسی کنید.</p>
+        <a href="index.html" class="btn">بازگشت به صفحه اصلی</a>
+    </div>
+
+    <script>
+
+    document.addEventListener("DOMContentLoaded", function () {
+    let messages = ["صفحه‌ای که دنبال آن هستید پیدا نشد!", "متاسفیم، صفحه مورد نظر شما در دسترس نیست!", "خطای 404: مسیر مورد نظر یافت نشد!"];
+    let h2 = document.querySelector("h2");
+    let index = 0;
+
+    setInterval(() => {
+        index = (index + 1) % messages.length;
+        h2.style.opacity = 0;
+        setTimeout(() => {
+            h2.innerText = messages[index];
+            h2.style.opacity = 1;
+        }, 500);
+    }, 3000);
+});
+
+    </script>
+</body>
+</html>
