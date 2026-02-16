@@ -1,12 +1,12 @@
 @font-face {
   font-family: "Peyda";
-  src: url("../css/fonts/Peyda-Regular.ttf") format("truetype");
+  src: url("Peyda-Regular.ttf") format("truetype");
   font-weight: normal;
 }
 
 @font-face {
   font-family: "Peyda";
-  src: url("../css/fonts/Peyda-Bold.ttf") format("truetype");
+  src: url("Peyda-Bold.ttf") format("truetype");
   font-weight: bold;
 }
 
@@ -2133,3 +2133,4 @@ h3 {
     padding: 20px;
   }
 }
+
