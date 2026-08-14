@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>دنیزشاپ | فروشگاه آنلاین</title>
+    <link rel="stylesheet" href="assets/css/style-2.css" />
+  </head>
+  <body>
+    <aside class="sb collapsed" id="sb2" data-collapsed-class="collapsed">
+      <div class="sb-head">
+        <a href="index-2.html" class="sb-logo">DenizShop</a>
+        <button class="sb-toggle" id="sbToggle2" aria-label="جمع کردن منو">
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2.5"
+          >
+            <polyline points="15 18 9 12 15 6" />
+          </svg>
+        </button>
+      </div>
+      <nav class="sb-nav" aria-label="منوی اصلی">
+        <span class="sb-nav-label">منو</span>
+        <a href="index-2.html" class="sb-item active">
+          <span class="sb-item-icon">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z" />
+              <polyline points="9 22 9 12 15 12 15 22" />
+            </svg>
+          </span>
+          <span class="sb-item-text">صفحه اصلی</span>
+        </a>
+        <a href="#" class="sb-item" id="shopToggleItem">
+          <span class="sb-item-icon">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z" />
+              <line x1="3" y1="6" x2="21" y2="6" />
+              <path d="M16 10a4 4 0 01-8 0" />
+            </svg>
+          </span>
+          <span class="sb-item-text">فروشگاه</span>
+        </a>
+
+        <div
+          id="categoryMenu"
+          class="sb-collapse-menu"
+          data-toggle-class="expanded"
+        >
+          <span class="sb-nav-label">دسته‌بندی‌ها</span>
+          <div class="sb-sub">
+            <a href="category.html?cat=women-fashion" class="sb-sub-item"
+              >پوشاک زنانه</a
+            >
+            <a href="category.html?cat=men-fashion" class="sb-sub-item"
+              >پوشاک مردانه</a
+            >
+            <a href="category.html?cat=bags" class="sb-sub-item">کفش و کیف</a>
+            <a href="category.html?cat=beauty" class="sb-sub-item"
+              >آرایشی و بهداشتی</a
+            >
+            <a href="category.html?cat=mobile-tablet" class="sb-sub-item"
+              >موبایل و دیجیتال</a
+            >
+            <a href="category.html?cat=home-kitchen" class="sb-sub-item"
+              >خانه و آشپزخانه</a
+            >
+            <a href="category.html?cat=sport-travel" class="sb-sub-item"
+              >ورزش و سفر</a
+            >
+            <a href="category.html?cat=toys" class="sb-sub-item">اسباب‌بازی</a>
+          </div>
+          <div class="sb-divider"></div>
+        </div>
+
+        <span class="sb-nav-label">راهنما</span>
+        <a href="blog.html" class="sb-item">
+          <span class="sb-item-icon">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z" />
+              <path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z" />
+            </svg>
+          </span>
+          <span class="sb-item-text">وبلاگ</span>
+        </a>
+        <a href="faq.html" class="sb-item">
+          <span class="sb-item-icon">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <circle cx="12" cy="12" r="10" />
+              <line x1="12" y1="8" x2="12" y2="12" />
+              <line x1="12" y1="16" x2="12.01" y2="16" />
+            </svg>
+          </span>
+          <span class="sb-item-text">سوالات متداول</span>
+        </a>
+        <a href="about-us.html" class="sb-item">
+          <span class="sb-item-icon">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" />
+              <circle cx="9" cy="7" r="4" />
+              <path d="M23 21v-2a4 4 0 00-3-3.87" />
+              <path d="M16 3.13a4 4 0 010 7.75" />
+            </svg>
+          </span>
+          <span class="sb-item-text">درباره ما</span>
+        </a>
+        <a href="contact.html" class="sb-item">
+          <span class="sb-item-icon">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+              <circle cx="12" cy="10" r="3" />
+            </svg>
+          </span>
+          <span class="sb-item-text">تماس با ما</span>
+        </a>
+        <a href="order-tracking.html" class="sb-item">
+          <span class="sb-item-icon">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <circle cx="12" cy="12" r="10" />
+              <path d="M12 8v4l3 3" />
+            </svg>
+          </span>
+          <span class="sb-item-text">پیگیری سفارش</span>
+        </a>
+        <div class="sb-divider"></div>
+        <a href="category.html?cat=special-sale" class="sb-item sb-item-sale">
+          <span class="sb-item-icon">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <polyline points="23 6 13.5 15.5 8.5 10.5 1 18" />
+              <polyline points="17 6 23 6 23 12" />
+            </svg>
+          </span>
+          <span class="sb-item-text">تخفیف‌های ویژه</span>
+          <span class="sb-badge">داغ</span>
+        </a>
+      </nav>
+      <div class="sb-foot">
+        <div class="sb-user">
+          <div class="sb-avatar">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+            >
+              <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2" />
+              <circle cx="12" cy="7" r="4" />
+            </svg>
+          </div>
+          <div class="sb-user-info">
+            <span class="sb-user-name">خوش آمدید!</span>
+            <span class="sb-user-sub">ورود یا ثبت‌نام کنید</span>
+          </div>
+        </div>
+        <div class="sb-actions">
+          <a href="signup.html" class="sb-action-btn login">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M15 3h4a2 2 0 012 2v14a2 2 0 01-2 2h-4" />
+              <polyline points="10 17 15 12 10 7" />
+              <line x1="15" y1="12" x2="3" y2="12" />
+            </svg>
+            <span>ورود</span>
+          </a>
+          <a href="cart.html" class="sb-action-btn cart">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z" />
+              <line x1="3" y1="6" x2="21" y2="6" />
+              <path d="M16 10a4 4 0 01-8 0" />
+            </svg>
+            <span class="sb-cart-count">۳</span>
+            <span>سبد</span>
+          </a>
+        </div>
+      </div>
+    </aside>
+    <div class="sb-mob-bar">
+      <div class="mob-bar-inner">
+        <a href="index-2.html" class="mob-bar-btn active">
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z" />
+            <polyline points="9 22 9 12 15 12 15 22" />
+          </svg>
+          خانه
+        </a>
+        <a href="shop.html" class="mob-bar-btn">
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z" />
+            <line x1="3" y1="6" x2="21" y2="6" />
+            <path d="M16 10a4 4 0 01-8 0" />
+          </svg>
+          فروشگاه
+        </a>
+        <a href="shop.html" class="mob-bar-center" aria-label="فروشگاه">
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <circle cx="11" cy="11" r="8" />
+            <path d="M21 21l-4.35-4.35" />
+          </svg>
+        </a>
+        <a href="cart.html" class="mob-bar-btn" style="position: relative">
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z" />
+            <line x1="3" y1="6" x2="21" y2="6" />
+            <path d="M16 10a4 4 0 01-8 0" />
+          </svg>
+          <span class="mob-bar-badge">۳</span>
+          سبد
+        </a>
+        <a href="signup.html" class="mob-bar-btn">
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2" />
+            <circle cx="12" cy="7" r="4" />
+          </svg>
+          حساب
+        </a>
+      </div>
+    </div>
+    <div
+      class="page-wrap sb-collapsed"
+      id="pageWrap2"
+      data-sb-col="sb-collapsed"
+    >
+      <div class="top-bar">
+        <div class="tb-left">
+          <a href="index-2.html" class="tb-logo">DenizShop</a>
+        </div>
+        <div class="tb-center">
+          <div class="tb-search-bar">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <circle cx="11" cy="11" r="8" />
+              <path d="M21 21l-4.35-4.35" />
+            </svg>
+            <input
+              type="text"
+              id="globalSearchInput"
+              data-target="search.html?q="
+              placeholder="جستجو در دنیزشاپ..."
+            />
+          </div>
+        </div>
+        <div class="top-bar-actions">
+          <a href="cart.html" class="tb-icon" aria-label="سبد خرید">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z" />
+              <line x1="3" y1="6" x2="21" y2="6" />
+              <path d="M16 10a4 4 0 01-8 0" />
+            </svg>
+            <span class="tb-badge">۳</span>
+          </a>
+          <a href="signup.html" class="tb-icon" aria-label="حساب کاربری">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2" />
+              <circle cx="12" cy="7" r="4" />
+            </svg>
+          </a>
+        </div>
+      </div>
+      <main class="main-content">
+        <div class="h2-hero">
+          <div class="h2-hero-main">
+            <div class="h2-hero-slides" data-interval="4500">
+              <div
+                class="h2-slide active"
+                style="
+                  background-image: url('assets/images/page2/women.png');
+                  background-size: cover;
+                  background-position: center;
+                "
+              >
+                <div class="h2-slide-overlay"></div>
+                <div class="h2-slide-content">
+                  <div class="h2-badge">
+                    <div class="h2-badge-dot"></div>
+                    ویژه
+                  </div>
+                  <h2 class="h2-slide-title">کالکشن تابستانه</h2>
+                  <p class="h2-slide-sub">
+                    بروزترین مدل‌های لباس با بهترین کیفیت.
+                  </p>
+                  <div class="h2-slide-actions">
+                    <button class="h2-btn-white">مشاهده محصولات</button>
+                    <button class="h2-btn-ghost">تخفیف‌ها</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="h2-hero-side">
+            <div
+              class="h2-side-card"
+              style="
+                background-image: url('assets/images/page2/watch.png');
+                background-size: cover;
+                background-position: center;
+              "
+            >
+              <div class="h2-side-overlay">
+                <span class="h2-side-label">پیشنهاد روز</span>
+                <span class="h2-side-title">ساعت‌های هوشمند</span>
+                <span class="h2-side-cta"
+                  >خرید
+                  <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
+                    <path d="M15 18l-6-6 6-6" />
+                  </svg>
+                </span>
+              </div>
+            </div>
+
+            <div
+              class="h2-side-card"
+              style="
+                background-image: url('assets/images/page2/shoes.png');
+                background-size: cover;
+                background-position: center;
+              "
+            >
+              <div class="h2-side-overlay">
+                <span class="h2-side-label">جدیدترین‌ها</span>
+                <span class="h2-side-title">کفش‌های اسپرت</span>
+                <span class="h2-side-cta"
+                  >خرید
+                  <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
+                    <path d="M15 18l-6-6 6-6" />
+                  </svg>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="h2-sale-strip">
+          <div class="h2-sale-left">
+            <div class="h2-sale-tag">
+              <div class="h2-sale-tag-dot"></div>
+              فروش محدود
+            </div>
+            <h3 class="h2-sale-title">
+              جشنواره <span class="h2-sale-hl">شگفت‌انگیز</span>
+            </h3>
+            <p class="h2-sale-sub">تخفیف‌های تکرارنشدنی تا پایان زمان زیر</p>
+          </div>
+          <div class="h2-sale-mid" id="timerWrap2" data-time="30899">
+            <div class="h2-t-box">
+              <span class="h2-t-num" id="t2H"></span
+              ><span class="h2-t-lab">ساعت</span>
+            </div>
+            <div class="h2-t-sep">:</div>
+            <div class="h2-t-box">
+              <span class="h2-t-num" id="t2M"></span
+              ><span class="h2-t-lab">دقیقه</span>
+            </div>
+            <div class="h2-t-sep">:</div>
+            <div class="h2-t-box">
+              <span class="h2-t-num" id="t2S"></span
+              ><span class="h2-t-lab">ثانیه</span>
+            </div>
+          </div>
+          <button class="h2-sale-btn">
+            ورود به جشنواره
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
+              <path d="M15 18l-6-6 6-6" />
+            </svg>
+          </button>
+        </div>
+
+        <div class="h2-section">
+          <div class="h2-sec-head">
+            <h3 class="h2-sec-title">محصولات <span>برگزیده</span></h3>
+            <div class="h2-sec-tabs">
+              <button class="h2-stab active" data-filter="all">همه</button>
+              <button class="h2-stab" data-filter="cat1">موبایل</button>
+              <button class="h2-stab" data-filter="cat2">پوشاک</button>
+            </div>
+          </div>
+          <div class="h2-slider-wrap">
+            <button class="h2-slider-btn h2-slider-prev" aria-label="قبلی">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M9 18l6-6-6-6" />
+              </svg>
+            </button>
+            <div class="h2-plist" id="productSlider">
+              <div class="h2-pcard" data-cat="cat1">
+                <div
+                  class="h2-pcard-img"
+                  style="
+                    background-image: url('assets/images/products/shirt.webp');
+                    background-size: cover;
+                    background-position: center;
+                  "
+                >
+                  <span class="h2-pcard-badge h2-badge-disc">-۲۰٪</span>
+                  <button class="h2-pcard-wish" data-color="#c94f2a">
+                    <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
+                      <path
+                        d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <div class="h2-pcard-body">
+                  <span class="h2-pcard-brand">سامسونگ</span>
+                  <strong class="h2-pcard-name">گوشی موبایل گلکسی S23</strong>
+                  <div class="h2-pcard-price">
+                    <span class="h2-price-now">۴۵,۰۰۰,۰۰۰ تومان</span>
+                  </div>
+                  <button
+                    class="h2-pcard-add"
+                    data-duration="1800"
+                    data-alt="افزوده شد ✓"
+                  >
+                    <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
+                      <path d="M12 5v14M5 12h14" />
+                    </svg>
+                    افزودن به سبد
+                  </button>
+                </div>
+              </div>
+
+              <div class="h2-pcard" data-cat="cat2">
+                <div
+                  class="h2-pcard-img"
+                  style="
+                    background-image: url('assets/images/products/shirt.webp');
+                    background-size: cover;
+                    background-position: center;
+                  "
+                >
+                  <span class="h2-pcard-badge h2-badge-new">جدید</span>
+                  <button class="h2-pcard-wish" data-color="#c94f2a">
+                    <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
+                      <path
+                        d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <div class="h2-pcard-body">
+                  <span class="h2-pcard-brand">نایک</span>
+                  <strong class="h2-pcard-name"
+                    >کفش اسپرت مردانه نایک اورجینال</strong
+                  >
+                  <div class="h2-pcard-price">
+                    <span class="h2-price-now">۳,۲۰۰,۰۰۰ تومان</span>
+                  </div>
+                  <button
+                    class="h2-pcard-add"
+                    data-duration="1800"
+                    data-alt="افزوده شد ✓"
+                  >
+                    <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
+                      <path d="M12 5v14M5 12h14" />
+                    </svg>
+                    افزودن به سبد
+                  </button>
+                </div>
+              </div>
+
+              <div class="h2-pcard" data-cat="cat1">
+                <div
+                  class="h2-pcard-img"
+                  style="
+                    background-image: url('assets/images/products/shirt.webp');
+                    background-size: cover;
+                    background-position: center;
+                  "
+                >
+                  <span class="h2-pcard-badge h2-badge-disc">-۱۵٪</span>
+                  <button class="h2-pcard-wish" data-color="#c94f2a">
+                    <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
+                      <path
+                        d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <div class="h2-pcard-body">
+                  <span class="h2-pcard-brand">اپل</span>
+                  <strong class="h2-pcard-name"
+                    >اپل واچ سری ۹ سایز ۴۵ میلی‌متر</strong
+                  >
+                  <div class="h2-pcard-price">
+                    <span class="h2-price-now">۲۲,۵۰۰,۰۰۰ تومان</span>
+                  </div>
+                  <button
+                    class="h2-pcard-add"
+                    data-duration="1800"
+                    data-alt="افزوده شد ✓"
+                  >
+                    <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
+                      <path d="M12 5v14M5 12h14" />
+                    </svg>
+                    افزودن به سبد
+                  </button>
+                </div>
+              </div>
+
+              <div class="h2-pcard" data-cat="cat2">
+                <div
+                  class="h2-pcard-img"
+                  style="
+                    background-image: url('assets/images/products/shirt.webp');
+                    background-size: cover;
+                    background-position: center;
+                  "
+                >
+                  <button class="h2-pcard-wish" data-color="#c94f2a">
+                    <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
+                      <path
+                        d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <div class="h2-pcard-body">
+                  <span class="h2-pcard-brand">زارا</span>
+                  <strong class="h2-pcard-name"
+                    >تیشرت نخی مردانه زارا رنگ مشکی</strong
+                  >
+                  <div class="h2-pcard-price">
+                    <span class="h2-price-now">۸۵۰,۰۰۰ تومان</span>
+                  </div>
+                  <button
+                    class="h2-pcard-add"
+                    data-duration="1800"
+                    data-alt="افزوده شد ✓"
+                  >
+                    <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
+                      <path d="M12 5v14M5 12h14" />
+                    </svg>
+                    افزودن به سبد
+                  </button>
+                </div>
+              </div>
+
+              <div class="h2-pcard" data-cat="cat1">
+                <div
+                  class="h2-pcard-img"
+                  style="
+                    background-image: url('assets/images/products/shirt.webp');
+                    background-size: cover;
+                    background-position: center;
+                  "
+                >
+                  <span class="h2-pcard-badge h2-badge-new">جدید</span>
+                  <button class="h2-pcard-wish" data-color="#c94f2a">
+                    <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
+                      <path
+                        d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <div class="h2-pcard-body">
+                  <span class="h2-pcard-brand">شیائومی</span>
+                  <strong class="h2-pcard-name"
+                    >هندزفری بلوتوثی ردمی بادز ۵</strong
+                  >
+                  <div class="h2-pcard-price">
+                    <span class="h2-price-now">۱,۸۰۰,۰۰۰ تومان</span>
+                  </div>
+                  <button
+                    class="h2-pcard-add"
+                    data-duration="1800"
+                    data-alt="افزوده شد ✓"
+                  >
+                    <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
+                      <path d="M12 5v14M5 12h14" />
+                    </svg>
+                    افزودن به سبد
+                  </button>
+                </div>
+              </div>
+
+              <div class="h2-pcard" data-cat="cat2">
+                <div
+                  class="h2-pcard-img"
+                  style="
+                    background-image: url('assets/images/products/shirt.webp');
+                    background-size: cover;
+                    background-position: center;
+                  "
+                >
+                  <button class="h2-pcard-wish" data-color="#c94f2a">
+                    <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
+                      <path
+                        d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <div class="h2-pcard-body">
+                  <span class="h2-pcard-brand">ال‌سی وایکیکی</span>
+                  <strong class="h2-pcard-name">شلوار جین زنانه مدل جذب</strong>
+                  <div class="h2-pcard-price">
+                    <span class="h2-price-now">۱,۴۵۰,۰۰۰ تومان</span>
+                  </div>
+                  <button
+                    class="h2-pcard-add"
+                    data-duration="1800"
+                    data-alt="افزوده شد ✓"
+                  >
+                    <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
+                      <path d="M12 5v14M5 12h14" />
+                    </svg>
+                    افزودن به سبد
+                  </button>
+                </div>
+              </div>
+            </div>
+            <button class="h2-slider-btn h2-slider-next" aria-label="بعدی">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M15 18l-6-6 6-6" />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="h2-two-col">
+          <div class="h2-section">
+            <div class="h2-sec-head">
+              <h3 class="h2-sec-title">نظرات <span>مشتریان</span></h3>
+            </div>
+            <div class="h2-rev-list">
+              <div class="h2-rcard">
+                <div class="h2-rcard-avatar">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="#1a6b5a"
+                    stroke-width="1.5"
+                  >
+                    <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2" />
+                    <circle cx="12" cy="7" r="4" />
+                  </svg>
+                </div>
+                <div class="h2-rcard-body">
+                  <div class="h2-rcard-top">
+                    <span class="h2-rcard-name">علی احمدی</span>
+                    <span class="h2-rcard-city">تهران</span>
+                  </div>
+                  <div class="h2-rcard-stars">★★★★★</div>
+                  <p class="h2-rcard-text">
+                    کیفیت لباس‌ها بسیار عالی بود و دقیقا مشابه عکس ارسال شد.
+                    ارسال هم خیلی سریع بود.
+                  </p>
+                </div>
+              </div>
+              <div class="h2-rcard">
+                <div class="h2-rcard-avatar">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="#1a6b5a"
+                    stroke-width="1.5"
+                  >
+                    <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2" />
+                    <circle cx="12" cy="7" r="4" />
+                  </svg>
+                </div>
+                <div class="h2-rcard-body">
+                  <div class="h2-rcard-top">
+                    <span class="h2-rcard-name">سارا رضایی</span>
+                    <span class="h2-rcard-city">شیراز</span>
+                  </div>
+                  <div class="h2-rcard-stars">★★★★☆</div>
+                  <p class="h2-rcard-text">
+                    بسته‌بندی خیلی مرتب بود. فقط یکم سایز کفش برای من کوچک بود
+                    که سریع تعویض کردند.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="h2-section">
+            <div class="h2-sec-head">
+              <h3 class="h2-sec-title">آخرین <span>مقالات</span></h3>
+              <a href="blog.html" class="h2-sec-more"
+                >همه مقالات
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
+                  <path d="M15 18l-6-6 6-6" /></svg
+              ></a>
+            </div>
+            <div class="h2-blog-list">
+              <a href="post.html" class="h2-bcard">
+                <div class="h2-bcard-img"></div>
+                <div class="h2-bcard-body">
+                  <span class="h2-bcard-cat">مد و فشن</span>
+                  <strong class="h2-bcard-title"
+                    >راهنمای ست کردن رنگ لباس در فصل پاییز برای آقایان</strong
+                  >
+                  <span class="h2-bcard-date">۱۲ مهر ۱۴۰۲</span>
+                </div>
+              </a>
+              <a href="post.html" class="h2-bcard">
+                <div class="h2-bcard-img"></div>
+                <div class="h2-bcard-body">
+                  <span class="h2-bcard-cat">تکنولوژی</span>
+                  <strong class="h2-bcard-title"
+                    >بررسی بهترین ساعت‌های هوشمند بازار و مقایسه امکانات</strong
+                  >
+                  <span class="h2-bcard-date">۵ مهر ۱۴۰۲</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="h2-nl">
+          <div class="h2-nl-left">
+            <div class="h2-nl-tag">خبرنامه دنیزشاپ</div>
+            <h3 class="h2-nl-title">از تخفیف‌ها <span>باخبر شوید</span></h3>
+            <p class="h2-nl-sub">
+              با عضویت در خبرنامه، اولین نفری باشید که از فروش‌های ویژه مطلع
+              می‌شود.
+            </p>
+          </div>
+          <div class="h2-nl-form">
+            <input
+              type="email"
+              class="h2-nl-input"
+              placeholder="آدرس ایمیل خود را وارد کنید..."
+              id="nlInput2"
+            />
+            <button class="h2-nl-btn" id="nlBtn2" data-success="ثبت شد ✓">
+              عضویت
+            </button>
+          </div>
+        </div>
+
+        <footer class="h2-footer">
+          <div class="h2-footer-grid">
+            <div class="h2-footer-col">
+              <a href="index-2.html" class="h2-footer-logo">DenizShop</a>
+              <p class="h2-footer-desc">
+                دنیزشاپ، مقصد نهایی شما برای خریدی مطمئن و سریع. ما با ارائه
+                بهترین و باکیفیت‌ترین محصولات، تجربه‌ای متفاوت از خرید آنلاین را
+                برای شما رقم می‌زنیم.
+              </p>
+              <div class="h2-footer-socials">
+                <a href="#" class="h2-footer-social" aria-label="اینستاگرام">
+                  <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                    <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" />
+                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                  </svg>
+                </a>
+                <a href="#" class="h2-footer-social" aria-label="توییتر">
+                  <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
+                    <path
+                      d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"
+                    />
+                  </svg>
+                </a>
+                <a href="#" class="h2-footer-social" aria-label="تلگرام">
+                  <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
+                    <line x1="22" y1="2" x2="11" y2="13" />
+                    <polygon points="22 2 15 22 11 13 2 9 22 2" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <div class="h2-footer-col">
+              <div class="h2-footer-col-title">دسترسی سریع</div>
+              <div class="h2-footer-links">
+                <a href="shop.html">فروشگاه</a>
+                <a href="category.html?cat=special-sale">تخفیف‌های ویژه</a>
+                <a href="blog.html">وبلاگ آموزشی</a>
+                <a href="about-us.html">درباره ما</a>
+                <a href="contact.html">تماس با ما</a>
+              </div>
+            </div>
+
+            <div class="h2-footer-col">
+              <div class="h2-footer-col-title">خدمات مشتریان</div>
+              <div class="h2-footer-links">
+                <a href="faq.html">سوالات متداول</a>
+                <a href="order-tracking.html">پیگیری سفارشات</a>
+                <a href="terms.html">قوانین و مقررات</a>
+                <a href="privacy.html">حریم خصوصی</a>
+                <a href="return-policy.html">رویه بازگرداندن کالا</a>
+              </div>
+            </div>
+
+            <div class="h2-footer-col">
+              <div class="h2-footer-col-title">اطلاعات تماس</div>
+              <div class="h2-footer-links">
+                <a href="tel:+982100000000">تلفن: ۰۲۱-۰۰۰۰۰۰۰۰</a>
+                <a href="mailto:info@denizshop.com"
+                  >ایمیل: info@denizshop.com</a
+                >
+                <span
+                  style="font-size: 0.82rem; color: var(--cl); line-height: 1.6"
+                >
+                  تبریز خیابان ولیعصر
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="h2-footer-bottom">
+            <span class="h2-footer-copy"
+              >کلیه حقوق این سایت متعلق به فروشگاه دنیزشاپ می‌باشد.</span
+            >
+            <span class="h2-footer-dev">طراحی و توسعه شده توس امیرعابدین</span>
+          </div>
+        </footer>
+      </main>
+    </div>
+    <script src="assets/js/script-2.js"></script>
+  </body>
+</html>

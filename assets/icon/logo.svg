@@ -1,0 +1,77 @@
+<svg width="100%" viewBox="0 0 680 400" role="img" xmlns="http://www.w3.org/2000/svg" style="">
+  <title style="fill:rgb(0, 0, 0);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto">Espresso Café Logo</title>
+  <desc style="fill:rgb(0, 0, 0);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto">لوگوی کافه اسپرسو با طرح فنجان قهوه و بخار در پس‌زمینه دایره‌ای تیره</desc>
+
+  <defs>
+    
+
+    <radialGradient id="circleGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#2C1F0E"/>
+      <stop offset="100%" stop-color="#120C04"/>
+    </radialGradient>
+
+    <radialGradient id="glowGrad" cx="50%" cy="30%" r="60%">
+      <stop offset="0%" stop-color="#C4965A" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#C4965A" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="cupGrad" cx="50%" cy="0%" r="100%">
+      <stop offset="0%" stop-color="#E8D5B0"/>
+      <stop offset="100%" stop-color="#C4965A"/>
+    </radialGradient>
+
+    <radialGradient id="coffeeGrad" cx="50%" cy="30%" r="60%">
+      <stop offset="0%" stop-color="#5C3D1E"/>
+      <stop offset="100%" stop-color="#2C1A0A"/>
+    </radialGradient>
+  <mask id="imagine-text-gaps-xr8uct" maskUnits="userSpaceOnUse"><rect x="0" y="0" width="680" height="400" fill="white"/><rect x="216.03750610351562" y="230.40000915527344" width="247.9250030517578" height="60" fill="black" rx="2"/><rect x="301.2437438964844" y="288" width="77.51250457763672" height="33.60000038146973" fill="black" rx="2"/><rect x="210.1750030517578" y="326.8000183105469" width="259.65000915527344" height="17.600000381469727" fill="black" rx="2"/></mask></defs>
+
+  <circle cx="340" cy="200" r="170" fill="url(#circleGrad)" stroke="#C4965A" stroke-width="1.5" style="stroke:rgb(196, 150, 90);color:rgb(255, 255, 255);stroke-width:1.5px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <circle cx="340" cy="200" r="163" fill="none" stroke="#5C3D1E" stroke-width="0.5" style="fill:none;stroke:rgb(92, 61, 30);color:rgb(255, 255, 255);stroke-width:0.5px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <circle cx="340" cy="200" r="170" fill="url(#glowGrad)" style="stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <circle cx="340" cy="200" r="160" fill="none" stroke="#C4965A" stroke-width="0.3" stroke-dasharray="3,6" style="fill:none;stroke:rgb(196, 150, 90);color:rgb(255, 255, 255);stroke-width:0.3px;stroke-dasharray:3px, 6px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+  <!-- فنجان قهوه -->
+  <!-- بشقابک -->
+  <ellipse cx="340" cy="228" rx="52" ry="7" fill="#9A7A52" opacity="0.6" style="fill:rgb(154, 122, 82);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.6;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <ellipse cx="340" cy="227" rx="58" ry="5" fill="none" stroke="#C4965A" stroke-width="1" style="fill:none;stroke:rgb(196, 150, 90);color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+  <!-- بدنه فنجان -->
+  <path d="M298 195 Q296 228 310 232 Q325 236 340 236 Q355 236 370 232 Q384 228 382 195 Z" fill="url(#cupGrad)" stroke="#D4A870" stroke-width="0.8" style="stroke:rgb(212, 168, 112);color:rgb(255, 255, 255);stroke-width:0.8px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+  <!-- داخل فنجان با قهوه -->
+  <ellipse cx="340" cy="196" rx="39" ry="8" fill="url(#coffeeGrad)" style="stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <ellipse cx="340" cy="196" rx="32" ry="5" fill="#4A2F12" opacity="0.6" style="fill:rgb(74, 47, 18);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.6;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+  <!-- دسته فنجان -->
+  <path d="M382 200 Q400 200 400 210 Q400 222 382 220" fill="none" stroke="#C4965A" stroke-width="3.5" stroke-linecap="round" style="fill:none;stroke:rgb(196, 150, 90);color:rgb(255, 255, 255);stroke-width:3.5px;stroke-linecap:round;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <path d="M382 200 Q398 200 398 210 Q398 221 382 220" fill="none" stroke="#E8D5B0" stroke-width="1" stroke-linecap="round" style="fill:none;stroke:rgb(232, 213, 176);color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:round;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+  <!-- بخار -->
+  <path d="M322 185 Q318 175 322 165 Q326 155 322 145" fill="none" stroke="#D4A870" stroke-width="1.5" stroke-linecap="round" opacity="0.7" style="fill:none;stroke:rgb(212, 168, 112);color:rgb(255, 255, 255);stroke-width:1.5px;stroke-linecap:round;stroke-linejoin:miter;opacity:0.308867;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto">
+    <animate attributeName="opacity" values="0.7;0.2;0.7" dur="3s" repeatCount="indefinite" style="fill:none;stroke:rgb(212, 168, 112);color:rgb(255, 255, 255);stroke-width:1.5px;stroke-linecap:round;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  </path>
+  <path d="M340 182 Q336 170 340 158 Q344 146 340 135" fill="none" stroke="#D4A870" stroke-width="1.5" stroke-linecap="round" opacity="0.5" style="fill:none;stroke:rgb(212, 168, 112);color:rgb(255, 255, 255);stroke-width:1.5px;stroke-linecap:round;stroke-linejoin:miter;opacity:0.320427;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto">
+    <animate attributeName="opacity" values="0.5;0.1;0.5" dur="3s" begin="0.5s" repeatCount="indefinite" style="fill:none;stroke:rgb(212, 168, 112);color:rgb(255, 255, 255);stroke-width:1.5px;stroke-linecap:round;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  </path>
+  <path d="M358 185 Q362 175 358 165 Q354 155 358 145" fill="none" stroke="#D4A870" stroke-width="1.5" stroke-linecap="round" opacity="0.7" style="fill:none;stroke:rgb(212, 168, 112);color:rgb(255, 255, 255);stroke-width:1.5px;stroke-linecap:round;stroke-linejoin:miter;opacity:0.6422;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto">
+    <animate attributeName="opacity" values="0.7;0.2;0.7" dur="3s" begin="1s" repeatCount="indefinite" style="fill:none;stroke:rgb(212, 168, 112);color:rgb(255, 255, 255);stroke-width:1.5px;stroke-linecap:round;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  </path>
+
+  <!-- اسم کافه -->
+  <text x="340" y="278" text-anchor="middle" style="fill:rgb(245, 230, 200);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Playfair Display&quot;, Georgia, serif;font-size:42px;font-weight:700;text-anchor:middle;dominant-baseline:auto">ESPRESSO</text>
+
+  <!-- خط جداکننده -->
+  <line x1="278" y1="290" x2="314" y2="290" stroke="#C4965A" stroke-width="0.8" mask="url(#imagine-text-gaps-xr8uct)" style="fill:rgb(0, 0, 0);stroke:rgb(196, 150, 90);color:rgb(255, 255, 255);stroke-width:0.8px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <circle cx="320" cy="290" r="2" fill="#C4965A" style="fill:rgb(196, 150, 90);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <circle cx="340" cy="290" r="1.2" fill="#9A7A52" style="fill:rgb(154, 122, 82);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <circle cx="360" cy="290" r="2" fill="#C4965A" style="fill:rgb(196, 150, 90);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <line x1="366" y1="290" x2="402" y2="290" stroke="#C4965A" stroke-width="0.8" mask="url(#imagine-text-gaps-xr8uct)" style="fill:rgb(0, 0, 0);stroke:rgb(196, 150, 90);color:rgb(255, 255, 255);stroke-width:0.8px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+  <!-- CAFÉ -->
+  <text x="340" y="314" text-anchor="middle" style="fill:rgb(196, 150, 90);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Playfair Display&quot;, Georgia, serif;font-size:22px;font-weight:400;font-style:italic;text-anchor:middle;dominant-baseline:auto">café</text>
+
+  <!-- تگ لاین -->
+  <text x="340" y="340" text-anchor="middle" style="fill:rgb(154, 122, 82);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Cormorant Garamond&quot;, Georgia, serif;font-size:12px;font-weight:300;text-anchor:middle;dominant-baseline:auto">Since 1987 · Est. Paris</text>
+
+</svg>

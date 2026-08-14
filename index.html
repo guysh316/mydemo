@@ -3,676 +3,2230 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>پارسایان حمل و نقل بین‌المللی</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    />
-    <link rel="stylesheet" href="style.css" />
+    <title id="pageTitle">DENIZSHOP | فروشگاه انلاین</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
-    <nav class="floating-nav">
-      <div class="nav-container">
-        <a href="#" class="logo">
-          <img src="logo.png" alt="Parsayan Logo" />
-        </a>
+    <header class="header" id="header">
+      <div class="header-inner">
+        <button class="hamburger" id="hamburgerBtn" aria-label="باز کردن منو">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
 
-        <ul class="desktop-menu">
-          <li><a href="#" class="active">خانه</a></li>
-          <li><a href="#">سرویس‌ها</a></li>
-          <li><a href="#">رهگیری</a></li>
-          <li><a href="#">درباره ما</a></li>
-          <li><a href="#">تماس</a></li>
-        </ul>
+        <a href="index.html" class="logo">DenizShop</a>
 
-        <div class="nav-actions">
-          <button class="theme-toggle" id="theme-btn">
-            <i class="fa-regular fa-moon"></i>
+        <nav class="desktop-nav" aria-label="منوی اصلی">
+          <ul class="desktop-nav-list">
+            <li><a href="index.html">صفحه اصلی</a></li>
+            <li><a href="shop.html">فروشگاه</a></li>
+            <li class="has-dropdown has-mega">
+              <a href="#">
+                دسته‌بندی‌ها
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                >
+                  <polyline points="6 9 12 15 18 9" />
+                </svg>
+              </a>
+              <div class="mega-dropdown">
+                <div class="mega-col">
+                  <span class="mega-col-title">پوشاک</span>
+                  <ul>
+                    <li>
+                      <a href="category.html?cat=women-fashion">پوشاک زنانه</a>
+                    </li>
+                    <li>
+                      <a href="category.html?cat=men-fashion">پوشاک مردانه</a>
+                    </li>
+                    <li>
+                      <a href="category.html?cat=kids-fashion">پوشاک بچگانه</a>
+                    </li>
+                    <li>
+                      <a href="category.html?cat=sportswear">لباس ورزشی</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="mega-col">
+                  <span class="mega-col-title">کفش و کیف</span>
+                  <ul>
+                    <li>
+                      <a href="category.html?cat=women-shoes">کفش زنانه</a>
+                    </li>
+                    <li>
+                      <a href="category.html?cat=men-shoes">کفش مردانه</a>
+                    </li>
+                    <li><a href="category.html?cat=bags">کیف و کوله</a></li>
+                    <li><a href="category.html?cat=jewelry">جواهرات</a></li>
+                  </ul>
+                </div>
+                <div class="mega-col">
+                  <span class="mega-col-title">زیبایی و دیجیتال</span>
+                  <ul>
+                    <li>
+                      <a href="category.html?cat=beauty">آرایشی و بهداشتی</a>
+                    </li>
+                    <li>
+                      <a href="category.html?cat=mobile-tablet"
+                        >موبایل و تبلت</a
+                      >
+                    </li>
+                    <li><a href="category.html?cat=laptop">لپ‌تاپ</a></li>
+                    <li>
+                      <a href="category.html?cat=accessories">لوازم جانبی</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="mega-col">
+                  <span class="mega-col-title">سایر</span>
+                  <ul>
+                    <li>
+                      <a href="category.html?cat=home-kitchen"
+                        >خانه و آشپزخانه</a
+                      >
+                    </li>
+                    <li>
+                      <a href="category.html?cat=sport-travel">ورزش و سفر</a>
+                    </li>
+                    <li><a href="category.html?cat=toys">اسباب‌بازی</a></li>
+                    <li>
+                      <a href="category.html?cat=special-sale"
+                        >تخفیف‌های ویژه</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="has-dropdown">
+              <a href="#">
+                راهنما
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                >
+                  <polyline points="6 9 12 15 18 9" />
+                </svg>
+              </a>
+              <ul class="dropdown">
+                <li><a href="index-2.html">صفحه اصلی دوم</a></li>
+                <li><a href="index-3.html">صفحه اصلی سوم</a></li>
+                <li><a href="about-us.html">درباره ما</a></li>
+                <li><a href="contact.html">تماس با ما</a></li>
+                <li><a href="faq.html">سوالات متداول</a></li>
+                <li><a href="terms.html">قوانین و مقررات</a></li>
+                <li><a href="order-tracking.html">پیگیری سفارش</a></li>
+                <li><a href="404.html">صفحه 404</a></li>
+                <li><a href="503.html">صفحه 503</a></li>
+              </ul>
+            </li>
+            <li><a href="blog.html">وبلاگ</a></li>
+            <li>
+              <a href="category.html?cat=special-sale" class="nav-sale-link">
+                تخفیف‌ها
+                <span class="nav-sale-badge">داغ</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header-actions">
+          <button
+            class="icon-btn nav-search-btn"
+            id="navSearchBtn"
+            aria-label="جستجو"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <circle cx="11" cy="11" r="8" />
+              <path d="M21 21l-4.35-4.35" />
+            </svg>
           </button>
 
-          <div class="lang-wrapper">
-            <button class="lang-toggle">
-              <i class="fa-solid fa-globe"></i>
-              <span class="current-lang">FA</span>
-              <i class="fa-solid fa-chevron-down arrow"></i>
-            </button>
-            <ul class="lang-dropdown">
-              <li data-lang="fa" class="active">
-                <span>فارسی</span>
-              </li>
-              <li data-lang="en">
-                <span>English</span>
-              </li>
-              <li data-lang="ar">
-                <span>العربية</span>
-              </li>
-              <li data-lang="tr">
-                <span>Türkçe</span>
-              </li>
-            </ul>
-          </div>
-
-          <a href="#" class="btn-login">
-            <i class="fa-regular fa-user"></i>
-            <span>ورود</span>
+          <a href="cart.html" class="icon-btn" aria-label="سبد خرید">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z" />
+              <line x1="3" y1="6" x2="21" y2="6" />
+              <path d="M16 10a4 4 0 01-8 0" />
+            </svg>
+            <span class="cart-badge">۳</span>
           </a>
-          <button class="mobile-toggle">
-            <i class="fa-solid fa-bars-staggered"></i>
+
+          <a href="signup.html" class="icon-btn" aria-label="حساب کاربری">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2" />
+              <circle cx="12" cy="7" r="4" />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="nav-search-bar" id="navSearchBar">
+        <div class="nav-search-inner">
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <circle cx="11" cy="11" r="8" />
+            <path d="M21 21l-4.35-4.35" />
+          </svg>
+          <input
+            type="text"
+            placeholder="جستجو در دنیزشاپ..."
+            id="navSearchInput"
+          />
+          <button
+            class="nav-search-close"
+            id="navSearchClose"
+            aria-label="بستن جستجو"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+            >
+              <line x1="18" y1="6" x2="6" y2="18" />
+              <line x1="6" y1="6" x2="18" y2="18" />
+            </svg>
           </button>
-        </div>
-      </div>
-    </nav>
-
-    <header class="hero-section">
-      <div class="swiper hero-slider">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <div
-              class="slide-bg"
-              style="
-                background-image: url('https://images.unsplash.com/photo-1436491865332-7a61a109cc05?q=80&w=2074&auto=format&fit=crop');
-              "
-            ></div>
-            <div class="glass-overlay"></div>
-            <div class="slide-content">
-              <div class="text-wrapper" data-swiper-parallax="-300">
-                <span class="tag">لجستیک هوشمند ۲۰۲۶</span>
-                <h1>مسیرهای جهان<br />در دستان شماست</h1>
-                <p>ارسال بار هوایی و دریایی با تضمین سرعت و امنیت.</p>
-                <div class="cta-group">
-                  <a href="#" class="btn-primary"
-                    >شروع ارسال <i class="fa-solid fa-arrow-left"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="swiper-slide">
-            <div
-              class="slide-bg"
-              style="
-                background-image: url('https://images.unsplash.com/photo-1578575437130-527eed3abbec?q=80&w=2070&auto=format&fit=crop');
-              "
-            ></div>
-            <div class="glass-overlay"></div>
-            <div class="slide-content">
-              <div class="text-wrapper" data-swiper-parallax="-300">
-                <span class="tag">حمل و نقل دریایی</span>
-                <h1>اقیانوس‌ها<br />کوچک می‌شوند</h1>
-                <p>خدمات کانتینری دربست و خرده بار به تمام بنادر جهان.</p>
-                <div class="cta-group">
-                  <a href="#" class="btn-primary"
-                    >استعلام نرخ <i class="fa-solid fa-arrow-left"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="slider-nav">
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
-        </div>
-        <div class="swiper-pagination"></div>
-      </div>
-
-      <div class="tracker-island">
-        <div class="liquid-glass-box">
-          <div class="tracker-tabs">
-            <button class="tab-btn active" data-target="track">
-              <i class="fa-solid fa-magnifying-glass-location"></i> رهگیری
-            </button>
-            <button class="tab-btn" data-target="quote">
-              <i class="fa-solid fa-calculator"></i> قیمت
-            </button>
-          </div>
-          <div class="tracker-input-group">
-            <input type="text" placeholder="شماره بارنامه را وارد کنید..." />
-            <button class="btn-track">
-              <i class="fa-solid fa-arrow-left"></i>
-            </button>
-          </div>
         </div>
       </div>
     </header>
 
-    <div class="fixed-support">
-      <button class="support-toggle">
-        <i class="fa-solid fa-headset"></i>
-      </button>
-      <div class="social-stack">
-        <a href="#" class="social-link telegram"
-          ><i class="fa-brands fa-telegram"></i
-        ></a>
-        <a href="#" class="social-link whatsapp"
-          ><i class="fa-brands fa-whatsapp"></i
-        ></a>
-        <a href="#" class="social-link instagram"
-          ><i class="fa-brands fa-instagram"></i
-        ></a>
-        <a href="#" class="social-link facebook"
-          ><i class="fa-brands fa-facebook"></i
-        ></a>
+    <div class="drawer-overlay" id="drawerOverlay"></div>
+    <nav class="drawer" id="drawer">
+      <div class="drawer-header">
+        <span class="drawer-logo">DenizShop</span>
+        <button class="drawer-close" id="drawerClose" aria-label="بستن منو">
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2.5"
+          >
+            <line x1="18" y1="6" x2="6" y2="18" />
+            <line x1="6" y1="6" x2="18" y2="18" />
+          </svg>
+        </button>
       </div>
-    </div>
-
-    <section class="services-modern">
-      <div class="glow-bg">
-        <div class="orb orb-1"></div>
-        <div class="orb orb-2"></div>
-      </div>
-
-      <div class="container relative-z">
-        <div class="sec-header">
-          <span class="pill-tag">خدمات اختصاصی</span>
-          <h2>زنجیره تامین <span class="gradient-text">بدون مرز</span></h2>
-          <p class="sec-desc">
-            راهکارهای هوشمند برای انتقال سرمایه شما در کوتاه‌ترین زمان ممکن
-          </p>
+      <div class="drawer-user">
+        <div class="drawer-avatar">
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.5"
+          >
+            <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2" />
+            <circle cx="12" cy="7" r="4" />
+          </svg>
         </div>
-
-        <div class="bento-grid">
-          <div class="glass-panel service-item">
-            <div class="panel-shine"></div>
-            <div class="icon-glass">
-              <i class="fa-solid fa-plane-circle-check"></i>
-            </div>
-            <h3>فریت بار هوایی</h3>
-            <p>ارسال سریع لوازم شخصی و تجاری با خطوط هوایی معتبر جهانی.</p>
-            <ul class="micro-features">
-              <li><i class="fa-solid fa-check"></i> بسته‌بندی ایمن</li>
-              <li><i class="fa-solid fa-check"></i> تحویل ۳ تا ۵ روزه</li>
-            </ul>
-            <a href="#" class="action-link"
-              >مشاهده تعرفه <i class="fa-solid fa-arrow-left-long"></i
-            ></a>
-          </div>
-
-          <div class="glass-panel service-item featured-item">
-            <div class="panel-shine"></div>
-            <div class="floating-badge">پیشنهاد ویژه تجار</div>
-            <div class="icon-glass main-icon">
-              <i class="fa-solid fa-ship"></i>
-            </div>
-            <h3>حمل دریایی (Ocean Freight)</h3>
-            <p>
-              کانتینرهای دربست (FCL) و خرده بار (LCL) با بهترین نرخ رقابت برای
-              چین و دبی.
-            </p>
-            <ul class="micro-features">
-              <li><i class="fa-solid fa-check"></i> بیمه تمام خطر</li>
-              <li><i class="fa-solid fa-check"></i> ترخیص اختصاصی</li>
-              <li><i class="fa-solid fa-check"></i> انبارداری رایگان</li>
-            </ul>
-            <a href="#" class="btn-glow-full">استعلام فوری کانتینر</a>
-          </div>
-
-          <div class="glass-panel service-item">
-            <div class="panel-shine"></div>
-            <div class="icon-glass">
-              <i class="fa-solid fa-truck-fast"></i>
-            </div>
-            <h3>ترانزیت زمینی</h3>
-            <p>
-              حمل و نقل جاده‌ای به اروپا و کشورهای همسایه با کامیون‌های مجهز.
-            </p>
-            <ul class="micro-features">
-              <li><i class="fa-solid fa-check"></i> رهگیری ماهواره‌ای</li>
-              <li><i class="fa-solid fa-check"></i> سرویس درب به درب</li>
-            </ul>
-            <a href="#" class="action-link"
-              >مشاهده مسیرها <i class="fa-solid fa-arrow-left-long"></i
-            ></a>
-          </div>
+        <div class="drawer-user-info">
+          <span class="drawer-user-name">خوش آمدید!</span>
+          <a href="signup.html" class="drawer-user-link">ورود / ثبت‌نام</a>
         </div>
       </div>
-    </section>
+      <div class="drawer-search">
+        <svg
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <circle cx="11" cy="11" r="8" />
+          <path d="M21 21l-4.35-4.35" />
+        </svg>
+        <input type="text" placeholder="جستجو..." />
+      </div>
+      <ul class="drawer-nav">
+        <li>
+          <a href="index.html">
+            <span class="drawer-nav-icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z" />
+                <polyline points="9 22 9 12 15 12 15 22" />
+              </svg>
+            </span>
+            صفحه اصلی
+          </a>
+        </li>
+        <li>
+          <a href="shop.html">
+            <span class="drawer-nav-icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z" />
+                <line x1="3" y1="6" x2="21" y2="6" />
+                <path d="M16 10a4 4 0 01-8 0" />
+              </svg>
+            </span>
+            فروشگاه
+          </a>
+        </li>
+        <li class="drawer-has-sub">
+          <button class="drawer-nav-toggle">
+            <span class="drawer-nav-icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
+                <line x1="8" y1="21" x2="16" y2="21" />
+                <line x1="12" y1="17" x2="12" y2="21" />
+              </svg>
+            </span>
+            دسته‌بندی‌ها
+            <svg
+              class="drawer-chevron"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+            >
+              <polyline points="6 9 12 15 18 9" />
+            </svg>
+          </button>
+          <ul class="drawer-sub">
+            <li><a href="category.html?cat=women-fashion">پوشاک زنانه</a></li>
+            <li><a href="category.html?cat=men-fashion">پوشاک مردانه</a></li>
+            <li><a href="category.html?cat=bags">کفش و کیف</a></li>
+            <li><a href="category.html?cat=beauty">آرایشی و بهداشتی</a></li>
+            <li>
+              <a href="category.html?cat=mobile-tablet">موبایل و دیجیتال</a>
+            </li>
+            <li>
+              <a href="category.html?cat=home-kitchen">خانه و آشپزخانه</a>
+            </li>
+            <li><a href="category.html?cat=sport-travel">ورزش و سفر</a></li>
+            <li><a href="category.html?cat=toys">اسباب‌بازی</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="blog.html">
+            <span class="drawer-nav-icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z" />
+                <path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z" />
+              </svg>
+            </span>
+            وبلاگ
+          </a>
+        </li>
+        <li>
+          <a href="faq.html">
+            <span class="drawer-nav-icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <circle cx="12" cy="12" r="10" />
+                <line x1="12" y1="8" x2="12" y2="12" />
+                <line x1="12" y1="16" x2="12.01" y2="16" />
+              </svg>
+            </span>
+            سوالات متداول
+          </a>
+        </li>
+        <li>
+          <a href="contact.html">
+            <span class="drawer-nav-icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+            </span>
+            تماس با ما
+          </a>
+        </li>
+        <li>
+          <a href="order-tracking.html">
+            <span class="drawer-nav-icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <circle cx="12" cy="12" r="10" />
+                <path d="M12 8v4l3 3" />
+              </svg>
+            </span>
+            پیگیری سفارش
+          </a>
+        </li>
+        <li>
+          <a href="category.html?cat=special-sale" class="drawer-sale-link">
+            <span class="drawer-nav-icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <polyline points="23 6 13.5 15.5 8.5 10.5 1 18" />
+                <polyline points="17 6 23 6 23 12" />
+              </svg>
+            </span>
+            تخفیف‌های ویژه
+            <span class="drawer-badge">داغ</span>
+          </a>
+        </li>
+      </ul>
+      <div class="drawer-footer">
+        <a href="about-us.html">درباره ما</a>
+        <a href="terms.html">قوانین و مقررات</a>
+        <a href="contact.html">پشتیبانی</a>
+      </div>
+    </nav>
 
-    <section class="global-reach">
-      <div class="map-overlay-gradient"></div>
-      <div class="container">
-        <div class="reach-grid">
-          <div class="reach-content">
-            <div class="sec-badge">
-              <span class="pulse-dot"></span> شبکه جهانی
-            </div>
-            <h2>
-              گستره‌ای به وسعت <br />
-              <span class="gradient-text-gold">پنج قاره</span>
-            </h2>
-            <p class="reach-desc">
-              پوشش لجستیکی در بیش از ۵۰ کشور صنعتی و تجاری. پارسایان با دفاتر
-              فعال در هاب‌های اصلی خاورمیانه، اروپا و شرق آسیا، فاصله شما تا
-              بازارهای جهانی را به یک کلیک کاهش می‌دهد.
-            </p>
-
-            <div class="stats-row">
-              <div class="glass-stat">
-                <h4 class="counter" data-target="120">0</h4>
-                <span>مقصد فعال</span>
-              </div>
-              <div class="glass-stat">
-                <h4 class="counter" data-target="15">0</h4>
-                <span>هاب اختصاصی</span>
-              </div>
-              <div class="glass-stat">
-                <h4 class="counter" data-target="24">0</h4>
-                <span>ساعت پشتیبانی</span>
-              </div>
-            </div>
-
-            <div class="active-routes">
-              <h5>مسیرهای پرتردد این هفته:</h5>
-              <div class="route-tags">
-                <span class="route-pill"
-                  ><i class="fa-solid fa-plane-up"></i> تهران - شانگهای</span
-                >
-                <span class="route-pill"
-                  ><i class="fa-solid fa-ship"></i> بندرعباس - دبی</span
-                >
-                <span class="route-pill"
-                  ><i class="fa-solid fa-truck"></i> تبریز - استانبول</span
-                >
-              </div>
-            </div>
-          </div>
-
-          <div class="reach-map-visual">
+    <!-- =================== HERO SLIDER =================== -->
+    <section class="hero-section" id="hero">
+      <div class="hero-slider" id="heroSlider">
+        <div class="hero-slide active" data-slide="0">
+          <div class="hero-slide-bg">
             <img
-              src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2072&auto=format&fit=crop"
-              alt="World Map"
-              class="map-bg"
+              src="assets/images/hero/slider1.webp"
+              alt="کالکشن بهار"
+              class="hero-slide-img"
             />
-
-            <div class="hotspot" style="top: 38%; left: 48%">
-              <div class="ping"></div>
-              <div class="dot"></div>
-              <div class="map-tooltip">
-                <strong>Berlin Hub</strong>
-                <span>Germany</span>
-                <div class="status online">Active</div>
-              </div>
-            </div>
-
-            <div class="hotspot" style="top: 45%; left: 56%">
-              <div class="ping"></div>
-              <div class="dot main-hub"></div>
-              <div class="map-tooltip">
-                <strong>Tehran HQ</strong>
-                <span>Central Hub</span>
-                <div class="status online">Processing</div>
-              </div>
-            </div>
-
-            <div class="hotspot" style="top: 48%; left: 78%">
-              <div class="ping"></div>
-              <div class="dot"></div>
-              <div class="map-tooltip">
-                <strong>Shanghai</strong>
-                <span>China</span>
-                <div class="status busy">High Traffic</div>
-              </div>
-            </div>
-
-            <div class="hotspot" style="top: 52%; left: 54%">
-              <div class="ping"></div>
-              <div class="dot"></div>
-              <div class="map-tooltip">
-                <strong>Dubai Port</strong>
-                <span>UAE</span>
-                <div class="status online">Active</div>
-              </div>
-            </div>
+            <div class="hero-slide-overlay"></div>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="why-us-section" id="stats-trigger">
-      <div class="neuronal-bg"></div>
-      <div class="container">
-        <div class="why-grid">
-          <div class="why-content">
-            <span class="ultra-tag">فراتر از لجستیک</span>
-            <h2>
-              ما زمان را برای شما <br />
-              <span class="text-neon">متوقف می‌کنیم</span>
-            </h2>
-            <p class="persuasive-text">
-              در دنیایی که ثانیه‌ها میلیاردها دلار ارزش دارند، پارسایان تنها یک
-              شرکت حمل و نقل نیست؛ ما
-              <strong>معماران زمان و مکان</strong> هستیم. با زیرساخت‌های هوش
-              مصنوعی ۲۰۲۶، مرزهای جغرافیایی برای ما معنایی ندارند. ما بار شما را
-              "جابجا" نمی‌کنیم، ما آن را به مقصد "تله‌پورت" می‌کنیم.
+          <div class="hero-slide-content">
+            <span class="hero-badge">جدید ۱۴۰۵</span>
+            <h1 class="hero-title">کالکشن بهار<br />رسید</h1>
+            <p class="hero-subtitle">
+              جدیدترین مدهای فصل با بهترین کیفیت و قیمت
             </p>
-            <ul class="power-list">
-              <li>
-                <i class="fa-solid fa-rocket"></i> ترخیص کالا با سرعت کوانتومی
-              </li>
-              <li>
-                <i class="fa-solid fa-fingerprint"></i> امنیت نظامی برای
-                محموله‌های تجاری
-              </li>
-              <li>
-                <i class="fa-solid fa-globe"></i> تسلط کامل بر شاهراه‌های آبی و
-                هوایی
-              </li>
-            </ul>
+            <div class="hero-actions">
+              <a href="#" class="hero-btn-primary">خرید کنید</a>
+              <a href="#" class="hero-btn-ghost">مشاهده همه</a>
+            </div>
           </div>
+        </div>
 
-          <div class="stats-grid">
-            <div class="glass-stat-card card-1">
-              <div class="inner-glow"></div>
-              <div class="stat-icon"><i class="fa-solid fa-box-open"></i></div>
-              <div class="stat-data">
-                <span class="counter-num" data-target="150000">0</span>
-                <span class="plus">+</span>
-              </div>
-              <p>محموله موفق سالانه</p>
+        <div class="hero-slide" data-slide="1">
+          <div class="hero-slide-bg">
+            <img
+              src="assets/images/hero/slider2.webp"
+              alt="فروش ویژه"
+              class="hero-slide-img"
+            />
+            <div class="hero-slide-overlay"></div>
+          </div>
+          <div class="hero-slide-content">
+            <span
+              class="hero-badge"
+              style="background: rgba(244, 114, 182, 0.9)"
+              >تا ۵۰٪ تخفیف</span
+            >
+            <h1 class="hero-title">فروش ویژه<br />تابستان</h1>
+            <p class="hero-subtitle">بهترین پیشنهادها فقط تا پایان این هفته</p>
+            <div class="hero-actions">
+              <a href="#" class="hero-btn-primary">دیدن تخفیف‌ها</a>
+              <a href="#" class="hero-btn-ghost">اطلاعات بیشتر</a>
             </div>
+          </div>
+        </div>
 
-            <div class="glass-stat-card card-2">
-              <div class="inner-glow"></div>
-              <div class="stat-icon">
-                <i class="fa-regular fa-face-smile-beam"></i>
-              </div>
-              <div class="stat-data">
-                <span class="counter-num" data-target="99">0</span>
-                <span class="percent">%</span>
-              </div>
-              <p>رضایت مطلق مشتریان</p>
+        <div class="hero-slide" data-slide="2">
+          <div class="hero-slide-bg">
+            <img
+              src="assets/images/hero/slider3.webp"
+              alt="دیجیتال"
+              class="hero-slide-img"
+            />
+            <div class="hero-slide-overlay"></div>
+          </div>
+          <div class="hero-slide-content">
+            <span class="hero-badge" style="background: rgba(56, 189, 248, 0.9)"
+              >تکنولوژی</span
+            >
+            <h1 class="hero-title">جدیدترین<br />گجت‌ها</h1>
+            <p class="hero-subtitle">آخرین محصولات دیجیتال با قیمت رقابتی</p>
+            <div class="hero-actions">
+              <a href="#" class="hero-btn-primary">خرید دیجیتال</a>
+              <a href="#" class="hero-btn-ghost">مقایسه قیمت</a>
             </div>
+          </div>
+        </div>
+      </div>
 
-            <div class="glass-stat-card card-3">
-              <div class="inner-glow"></div>
-              <div class="stat-icon">
-                <i class="fa-solid fa-plane-lock"></i>
+      <!-- Arrows -->
+      <button
+        class="hero-arrow hero-arrow-prev"
+        id="heroPrev"
+        aria-label="قبلی"
+      >
+        <svg
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2.5"
+        >
+          <polyline points="9 18 15 12 9 6" />
+        </svg>
+      </button>
+      <button
+        class="hero-arrow hero-arrow-next"
+        id="heroNext"
+        aria-label="بعدی"
+      >
+        <svg
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2.5"
+        >
+          <polyline points="15 18 9 12 15 6" />
+        </svg>
+      </button>
+
+      <!-- Dots -->
+      <div class="hero-dots" id="heroDots">
+        <button class="hero-dot active" data-index="0"></button>
+        <button class="hero-dot" data-index="1"></button>
+        <button class="hero-dot" data-index="2"></button>
+      </div>
+    </section>
+
+    <!-- =================== STORIES =================== -->
+    <section class="stories-section" id="stories">
+      <div class="stories-wrapper">
+        <button
+          class="story-nav-btn story-prev"
+          id="storyPrev"
+          aria-label="قبلی"
+        >
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2.5"
+          >
+            <polyline points="9 18 15 12 9 6" />
+          </svg>
+        </button>
+
+        <div class="stories-track-container">
+          <div class="stories-track" id="storiesTrack">
+            <div class="story-item" onclick="openStory(0)">
+              <div class="story-ring active">
+                <div
+                  class="story-avatar"
+                  style="background: linear-gradient(135deg, #ff6b6b, #ff8e53)"
+                >
+                  <img
+                    src="assets/images/avatars/special-offer.webp"
+                    alt="پیشنهاد ویژه"
+                  />
+                </div>
               </div>
-              <div class="stat-data">
-                <span class="counter-num" data-target="50">0</span>
-                <span class="plus">+</span>
-              </div>
-              <p>کشور تحت پوشش مستقیم</p>
+              <span class="story-label">پیشنهاد ویژه</span>
             </div>
+            <div class="story-item" onclick="openStory(1)">
+              <div class="story-ring active">
+                <div
+                  class="story-avatar"
+                  style="background: linear-gradient(135deg, #a18cd1, #fbc2eb)"
+                >
+                  <img src="assets/images/avatars/fashion.webp" alt="مد روز" />
+                </div>
+              </div>
+              <span class="story-label">مد روز</span>
+            </div>
+            <div class="story-item" onclick="openStory(2)">
+              <div class="story-ring active">
+                <div
+                  class="story-avatar"
+                  style="background: linear-gradient(135deg, #43e97b, #38f9d7)"
+                >
+                  <img src="assets/images/avatars/jewelry.webp" alt="جواهرات" />
+                </div>
+              </div>
+              <span class="story-label">جواهرات</span>
+            </div>
+            <div class="story-item" onclick="openStory(3)">
+              <div class="story-ring">
+                <div
+                  class="story-avatar"
+                  style="background: linear-gradient(135deg, #4facfe, #00f2fe)"
+                >
+                  <img src="assets/images/avatars/tech.webp" alt="تکنولوژی" />
+                </div>
+              </div>
+              <span class="story-label">تکنولوژی</span>
+            </div>
+            <div class="story-item" onclick="openStory(4)">
+              <div class="story-ring">
+                <div
+                  class="story-avatar"
+                  style="background: linear-gradient(135deg, #fa709a, #fee140)"
+                >
+                  <img src="assets/images/avatars/beauty.webp" alt="آرایشی" />
+                </div>
+              </div>
+              <span class="story-label">آرایشی</span>
+            </div>
+            <div class="story-item" onclick="openStory(5)">
+              <div class="story-ring active">
+                <div
+                  class="story-avatar"
+                  style="background: linear-gradient(135deg, #f7971e, #ffd200)"
+                >
+                  <img src="assets/images/avatars/sale.webp" alt="تخفیف‌ها" />
+                </div>
+              </div>
+              <span class="story-label">تخفیف‌ها</span>
+            </div>
+            <div class="story-item" onclick="openStory(6)">
+              <div class="story-ring">
+                <div
+                  class="story-avatar"
+                  style="background: linear-gradient(135deg, #30cfd0, #667eea)"
+                >
+                  <img src="assets/images/avatars/sport.webp" alt="ورزشی" />
+                </div>
+              </div>
+              <span class="story-label">ورزشی</span>
+            </div>
+            <div class="story-item" onclick="openStory(7)">
+              <div class="story-ring active">
+                <div
+                  class="story-avatar"
+                  style="background: linear-gradient(135deg, #f857a6, #ff5858)"
+                >
+                  <img src="assets/images/avatars/gift.webp" alt="هدیه" />
+                </div>
+              </div>
+              <span class="story-label">هدیه</span>
+            </div>
+          </div>
+        </div>
 
-            <div class="glass-stat-card card-4">
-              <div class="inner-glow"></div>
-              <div class="stat-icon">
-                <i class="fa-solid fa-clock-rotate-left"></i>
+        <button
+          class="story-nav-btn story-next"
+          id="storyNext"
+          aria-label="بعدی"
+        >
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2.5"
+          >
+            <polyline points="15 18 9 12 15 6" />
+          </svg>
+        </button>
+
+        <!-- =================== STORY VIEWER MODAL =================== -->
+        <div class="story-modal" id="storyModal">
+          <div class="story-modal-overlay" onclick="closeStory()"></div>
+          <div class="story-modal-content">
+            <div class="story-progress-bars" id="storyProgressBars"></div>
+            <div class="story-modal-header">
+              <div class="story-modal-info">
+                <div class="story-modal-avatar" id="storyModalAvatar"></div>
+                <span class="story-modal-name" id="storyModalName"></span>
+                <span class="story-modal-time">چند لحظه پیش</span>
               </div>
-              <div class="stat-data">
-                <span class="counter-num" data-target="25">0</span>
-                <span class="plus">Sal</span>
-              </div>
-              <p>تجربه در سطح اول جهانی</p>
+              <button class="story-modal-close" onclick="closeStory()">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                >
+                  <line x1="18" y1="6" x2="6" y2="18" />
+                  <line x1="6" y1="6" x2="18" y2="18" />
+                </svg>
+              </button>
+            </div>
+            <div class="story-modal-body" id="storyModalBody">
+              <div class="story-tap-left" onclick="nextStorySlide()"></div>
+              <div class="story-tap-right" onclick="prevStorySlide()"></div>
+              <div class="story-content-inner" id="storyContentInner"></div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="about-parsayan-wrapper" id="about-trigger">
-      <div class="about-ambient-glow"></div>
-      <div class="container">
-        <div class="parsayan-split-grid">
-          <div class="parsayan-visual-side">
-            <div class="image-glass-frame">
-              <img
-                src="img/slide/p3.jpg"
-                alt="Parsayan HQ"
-                class="about-main-img"
+    <!-- =================== CATEGORY BANNERS =================== -->
+    <section class="cats-section">
+      <div class="cats-inner">
+        <div class="cats-header">
+          <h2 class="cats-title">دسته‌بندی‌ها</h2>
+          <a href="categories.html" class="cats-more"
+            >مشاهده همه
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+            >
+              <polyline points="15 18 9 12 15 6" />
+            </svg>
+          </a>
+        </div>
+
+        <div class="cats-grid">
+          <a
+            href="category.html?cat=women-fashion"
+            class="cat-card cat-fashion"
+          >
+            <div class="cat-icon-wrap">
+              <span class="cat-icon">👗</span>
+            </div>
+            <div class="cat-info">
+              <span class="cat-name">پوشاک</span>
+              <span class="cat-count">+۲۴۰۰ محصول</span>
+            </div>
+            <div class="cat-arrow">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <polyline points="15 18 9 12 15 6" />
+              </svg>
+            </div>
+          </a>
+
+          <a href="category.html?cat=bags" class="cat-card cat-shoes">
+            <div class="cat-icon-wrap">
+              <span class="cat-icon">👟</span>
+            </div>
+            <div class="cat-info">
+              <span class="cat-name">کفش و کیف</span>
+              <span class="cat-count">+۱۸۰۰ محصول</span>
+            </div>
+            <div class="cat-arrow">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <polyline points="15 18 9 12 15 6" />
+              </svg>
+            </div>
+          </a>
+
+          <a
+            href="category.html?cat=mobile-tablet"
+            class="cat-card cat-digital"
+          >
+            <div class="cat-icon-wrap">
+              <span class="cat-icon">📱</span>
+            </div>
+            <div class="cat-info">
+              <span class="cat-name">دیجیتال</span>
+              <span class="cat-count">+۹۵۰ محصول</span>
+            </div>
+            <div class="cat-arrow">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <polyline points="15 18 9 12 15 6" />
+              </svg>
+            </div>
+          </a>
+
+          <a href="category.html?cat=beauty" class="cat-card cat-beauty">
+            <div class="cat-icon-wrap">
+              <span class="cat-icon">💄</span>
+            </div>
+            <div class="cat-info">
+              <span class="cat-name">آرایشی</span>
+              <span class="cat-count">+۳۲۰۰ محصول</span>
+            </div>
+            <div class="cat-arrow">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <polyline points="15 18 9 12 15 6" />
+              </svg>
+            </div>
+          </a>
+
+          <a href="category.html?cat=home-kitchen" class="cat-card cat-home">
+            <div class="cat-icon-wrap">
+              <span class="cat-icon">🏠</span>
+            </div>
+            <div class="cat-info">
+              <span class="cat-name">خانه و آشپزخانه</span>
+              <span class="cat-count">+۱۱۰۰ محصول</span>
+            </div>
+            <div class="cat-arrow">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <polyline points="15 18 9 12 15 6" />
+              </svg>
+            </div>
+          </a>
+
+          <a href="category.html?cat=sport-travel" class="cat-card cat-sport">
+            <div class="cat-icon-wrap">
+              <span class="cat-icon">⚽</span>
+            </div>
+            <div class="cat-info">
+              <span class="cat-name">ورزش و سفر</span>
+              <span class="cat-count">+۷۸۰ محصول</span>
+            </div>
+            <div class="cat-arrow">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <polyline points="15 18 9 12 15 6" />
+              </svg>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================== SALE BANNER =================== -->
+    <section class="sale-section">
+      <div class="sale-banner">
+        <div class="sale-deco" aria-hidden="true">
+          <div class="sale-circle sc-1"></div>
+          <div class="sale-circle sc-2"></div>
+          <div class="sale-circle sc-3"></div>
+        </div>
+
+        <div class="sale-pct-bg" aria-hidden="true">۵۰٪</div>
+
+        <div class="sale-content">
+          <div class="sale-badge">
+            <span class="sale-pulse"></span>
+            فلش سیل — فقط امروز
+          </div>
+          <h2 class="sale-title">
+            تا <span class="sale-highlight">۵۰٪</span> تخفیف <br />روی محصولات
+            منتخب
+          </h2>
+          <p class="sale-sub">
+            بهترین قیمت‌ها تا پایان امشب. این فرصت را از دست ندهید!
+          </p>
+          <a href="#" class="sale-btn">مشاهده تخفیف‌ها</a>
+        </div>
+
+        <div class="sale-timer-wrap">
+          <p class="sale-timer-label">تا پایان فروش ویژه</p>
+          <div class="sale-timer" id="saleTimer">
+            <div class="t-box">
+              <span class="t-num" id="timerH">۰۸</span>
+              <span class="t-lab">ساعت</span>
+            </div>
+            <span class="t-sep">:</span>
+            <div class="t-box">
+              <span class="t-num" id="timerM">۳۴</span>
+              <span class="t-lab">دقیقه</span>
+            </div>
+            <span class="t-sep">:</span>
+            <div class="t-box">
+              <span class="t-num" id="timerS">۵۹</span>
+              <span class="t-lab">ثانیه</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="products-section" id="bestsellers">
+      <div class="products-inner">
+        <div class="products-head">
+          <div class="products-head-right">
+            <h2 class="section-title">پرفروش‌ترین‌ها</h2>
+            <div class="products-tabs" id="productsTabs">
+              <button class="ptab active" data-filter="all">همه</button>
+              <button class="ptab" data-filter="fashion">پوشاک</button>
+              <button class="ptab" data-filter="digital">دیجیتال</button>
+              <button class="ptab" data-filter="beauty">آرایشی</button>
+              <button class="ptab" data-filter="shoes">کفش و کیف</button>
+            </div>
+          </div>
+          <a href="#" class="section-more">
+            مشاهده همه
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+            >
+              <polyline points="15 18 9 12 15 6" />
+            </svg>
+          </a>
+        </div>
+
+        <div class="products-grid" id="productsGrid">
+          <div class="pcard" data-cat="shoes">
+            <div class="pcard-img">
+              <div
+                class="pcard-img-bg"
+                style="background: linear-gradient(135deg, #fce7f3, #ede9fe)"
+              ></div>
+              <img src="assets/images/products/nike.webp" alt="کتانی نایک" />
+              <button class="pcard-wish" aria-label="علاقه‌مندی">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"
+                  />
+                </svg>
+              </button>
+              <span class="pcard-badge badge-disc">۳۰٪</span>
+            </div>
+            <div class="pcard-body">
+              <span class="pcard-brand">Nike</span>
+              <h3 class="pcard-name">کتانی ران فری ۵.۰ مردانه</h3>
+              <div class="pcard-stars">
+                <span class="stars-fill">★★★★★</span>
+                <span class="stars-count">(۲۸۴)</span>
+              </div>
+              <div class="pcard-prices">
+                <span class="price-now">۱٬۸۹۰٬۰۰۰ ت</span>
+                <span class="price-old">۲٬۷۰۰٬۰۰۰ ت</span>
+              </div>
+              <button class="pcard-add">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z" />
+                  <line x1="3" y1="6" x2="21" y2="6" />
+                  <path d="M16 10a4 4 0 01-8 0" />
+                </svg>
+                افزودن به سبد
+              </button>
+            </div>
+          </div>
+
+          <!-- گوشی سامسونگ -->
+          <div class="pcard" data-cat="digital">
+            <div class="pcard-img">
+              <div
+                class="pcard-img-bg"
+                style="background: linear-gradient(135deg, #e0f2fe, #f0fdf4)"
+              ></div>
+              <img src="assets/images/products/samsung.webp" alt="سامسونگ" />
+              <button class="pcard-wish" aria-label="علاقه‌مندی">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"
+                  />
+                </svg>
+              </button>
+              <span class="pcard-badge badge-hot">پرفروش</span>
+            </div>
+            <div class="pcard-body">
+              <span class="pcard-brand">Samsung</span>
+              <h3 class="pcard-name">گوشی سامسونگ Galaxy A55 5G</h3>
+              <div class="pcard-stars">
+                <span class="stars-fill">★★★★☆</span>
+                <span class="stars-count">(۱۱۲)</span>
+              </div>
+              <div class="pcard-prices">
+                <span class="price-now">۱۴٬۵۰۰٬۰۰۰ ت</span>
+              </div>
+              <button class="pcard-add">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z" />
+                  <line x1="3" y1="6" x2="21" y2="6" />
+                  <path d="M16 10a4 4 0 01-8 0" />
+                </svg>
+                افزودن به سبد
+              </button>
+            </div>
+          </div>
+
+          <!-- رژ لب مک -->
+          <div class="pcard" data-cat="beauty">
+            <div class="pcard-img">
+              <div
+                class="pcard-img-bg"
+                style="background: linear-gradient(135deg, #fdf4ff, #fce7f3)"
+              ></div>
+              <img src="assets/images/products/rozh.webp" alt="رژ لب مک" />
+              <button class="pcard-wish" aria-label="علاقه‌مندی">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"
+                  />
+                </svg>
+              </button>
+              <span class="pcard-badge badge-disc">۲۰٪</span>
+            </div>
+            <div class="pcard-body">
+              <span class="pcard-brand">MAC</span>
+              <h3 class="pcard-name">رژ لب مات مک شید Ruby Woo</h3>
+              <div class="pcard-stars">
+                <span class="stars-fill">★★★★★</span>
+                <span class="stars-count">(۵۴۱)</span>
+              </div>
+              <div class="pcard-prices">
+                <span class="price-now">۴۸۰٬۰۰۰ ت</span>
+                <span class="price-old">۶۰۰٬۰۰۰ ت</span>
+              </div>
+              <button class="pcard-add">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z" />
+                  <line x1="3" y1="6" x2="21" y2="6" />
+                  <path d="M16 10a4 4 0 01-8 0" />
+                </svg>
+                افزودن به سبد
+              </button>
+            </div>
+          </div>
+
+          <!-- کیف زارا -->
+          <div class="pcard" data-cat="shoes">
+            <div class="pcard-img">
+              <div
+                class="pcard-img-bg"
+                style="background: linear-gradient(135deg, #fffbeb, #fef9c3)"
+              ></div>
+              <img src="assets/images/products/bag.webp" alt="کیف زارا" />
+              <button class="pcard-wish" aria-label="علاقه‌مندی">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"
+                  />
+                </svg>
+              </button>
+              <span class="pcard-badge badge-new">جدید</span>
+            </div>
+            <div class="pcard-body">
+              <span class="pcard-brand">Zara</span>
+              <h3 class="pcard-name">کیف دستی چرم زارا مدل Mini</h3>
+              <div class="pcard-stars">
+                <span class="stars-fill">★★★★☆</span>
+                <span class="stars-count">(۸۷)</span>
+              </div>
+              <div class="pcard-prices">
+                <span class="price-now">۲٬۲۰۰٬۰۰۰ ت</span>
+              </div>
+              <button class="pcard-add">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z" />
+                  <line x1="3" y1="6" x2="21" y2="6" />
+                  <path d="M16 10a4 4 0 01-8 0" />
+                </svg>
+                افزودن به سبد
+              </button>
+            </div>
+          </div>
+
+          <!-- پیراهن مانگو -->
+          <div class="pcard" data-cat="fashion">
+            <div class="pcard-img">
+              <div
+                class="pcard-img-bg"
+                style="background: linear-gradient(135deg, #ede9fe, #e0f2fe)"
+              ></div>
+              <img src="assets/images/products/shirt.webp" alt="پیراهن" />
+              <button class="pcard-wish" aria-label="علاقه‌مندی">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"
+                  />
+                </svg>
+              </button>
+              <span class="pcard-badge badge-disc">۴۰٪</span>
+            </div>
+            <div class="pcard-body">
+              <span class="pcard-brand">Mango</span>
+              <h3 class="pcard-name">پیراهن کتان آستین بلند زنانه</h3>
+              <div class="pcard-stars">
+                <span class="stars-fill">★★★★★</span>
+                <span class="stars-count">(۳۲۰)</span>
+              </div>
+              <div class="pcard-prices">
+                <span class="price-now">۸۹۰٬۰۰۰ ت</span>
+                <span class="price-old">۱٬۵۰۰٬۰۰۰ ت</span>
+              </div>
+              <button class="pcard-add">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z" />
+                  <line x1="3" y1="6" x2="21" y2="6" />
+                  <path d="M16 10a4 4 0 01-8 0" />
+                </svg>
+                افزودن به سبد
+              </button>
+            </div>
+          </div>
+
+          <!-- لپ‌تاپ لنوو -->
+          <div class="pcard" data-cat="digital">
+            <div class="pcard-img">
+              <div
+                class="pcard-img-bg"
+                style="background: linear-gradient(135deg, #f0fdf4, #ecfdf5)"
+              ></div>
+              <img src="assets/images/products/laptop.webp" alt="لپ‌تاپ" />
+              <button class="pcard-wish" aria-label="علاقه‌مندی">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"
+                  />
+                </svg>
+              </button>
+              <span class="pcard-badge badge-hot">پرفروش</span>
+            </div>
+            <div class="pcard-body">
+              <span class="pcard-brand">Lenovo</span>
+              <h3 class="pcard-name">لپ‌تاپ IdeaPad 3 Core i5</h3>
+              <div class="pcard-stars">
+                <span class="stars-fill">★★★★☆</span>
+                <span class="stars-count">(۶۴)</span>
+              </div>
+              <div class="pcard-prices">
+                <span class="price-now">۲۸٬۹۰۰٬۰۰۰ ت</span>
+              </div>
+              <button class="pcard-add">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z" />
+                  <line x1="3" y1="6" x2="21" y2="6" />
+                  <path d="M16 10a4 4 0 01-8 0" />
+                </svg>
+                افزودن به سبد
+              </button>
+            </div>
+          </div>
+
+          <!-- عطر دیور -->
+          <div class="pcard" data-cat="beauty">
+            <div class="pcard-img">
+              <div
+                class="pcard-img-bg"
+                style="background: linear-gradient(135deg, #fff1f2, #ffe4e6)"
+              ></div>
+              <img src="assets/images/products/parfum.webp" alt="عطر" />
+              <button class="pcard-wish" aria-label="علاقه‌مندی">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"
+                  />
+                </svg>
+              </button>
+              <span class="pcard-badge badge-new">جدید</span>
+            </div>
+            <div class="pcard-body">
+              <span class="pcard-brand">Dior</span>
+              <h3 class="pcard-name">ادوپرفیوم Miss Dior Blooming</h3>
+              <div class="pcard-stars">
+                <span class="stars-fill">★★★★★</span>
+                <span class="stars-count">(۱۹۸)</span>
+              </div>
+              <div class="pcard-prices">
+                <span class="price-now">۳٬۸۰۰٬۰۰۰ ت</span>
+              </div>
+              <button class="pcard-add">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z" />
+                  <line x1="3" y1="6" x2="21" y2="6" />
+                  <path d="M16 10a4 4 0 01-8 0" />
+                </svg>
+                افزودن به سبد
+              </button>
+            </div>
+          </div>
+
+          <!-- کاپشن H&M -->
+          <div class="pcard" data-cat="fashion">
+            <div class="pcard-img">
+              <div
+                class="pcard-img-bg"
+                style="background: linear-gradient(135deg, #fef9c3, #fef3c7)"
+              ></div>
+              <img src="assets/images/products/coat.webp" alt="کاپشن" />
+              <button class="pcard-wish" aria-label="علاقه‌مندی">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"
+                  />
+                </svg>
+              </button>
+              <span class="pcard-badge badge-disc">۲۵٪</span>
+            </div>
+            <div class="pcard-body">
+              <span class="pcard-brand">H&M</span>
+              <h3 class="pcard-name">کاپشن بادگیر مردانه مدل Sport</h3>
+              <div class="pcard-stars">
+                <span class="stars-fill">★★★★☆</span>
+                <span class="stars-count">(۱۵۳)</span>
+              </div>
+              <div class="pcard-prices">
+                <span class="price-now">۱٬۱۰۰٬۰۰۰ ت</span>
+                <span class="price-old">۱٬۴۷۰٬۰۰۰ ت</span>
+              </div>
+              <button class="pcard-add">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z" />
+                  <line x1="3" y1="6" x2="21" y2="6" />
+                  <path d="M16 10a4 4 0 01-8 0" />
+                </svg>
+                افزودن به سبد
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================== PROMO BANNERS =================== -->
+    <section class="promo-section">
+      <div class="promo-inner">
+        <a href="#" class="promo-card">
+          <div class="promo-bg">
+            <img
+              src="assets/images/promo/women.webp"
+              alt="کالکشن زنانه"
+              class="promo-img"
+            />
+            <div class="promo-overlay promo-overlay--purple"></div>
+          </div>
+          <div class="promo-content">
+            <span class="promo-eyebrow">کالکشن جدید ۱۴۰۵</span>
+            <h3 class="promo-title">مد زنانه<br />رسید</h3>
+            <p class="promo-sub">جدیدترین استایل‌های فصل با بهترین برندها</p>
+            <span class="promo-cta">
+              کشف کنید
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.5"
+              >
+                <polyline points="15 18 9 12 15 6" />
+              </svg>
+            </span>
+          </div>
+        </a>
+
+        <a href="#" class="promo-card">
+          <div class="promo-bg">
+            <img
+              src="assets/images/promo/digital.webp"
+              alt="تخفیف دیجیتال"
+              class="promo-img"
+            />
+            <div class="promo-overlay promo-overlay--blue"></div>
+          </div>
+          <div class="promo-content">
+            <span class="promo-eyebrow promo-eyebrow--cyan">تا ۴۰٪ تخفیف</span>
+            <h3 class="promo-title">دیجیتال<br />ارزان‌تر</h3>
+            <p class="promo-sub">گوشی، لپ‌تاپ و گجت با قیمت رقابتی</p>
+            <span class="promo-cta">
+              خرید کنید
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.5"
+              >
+                <polyline points="15 18 9 12 15 6" />
+              </svg>
+            </span>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- =================== NEW ARRIVALS =================== -->
+    <section class="products-section" id="new-arrivals">
+      <div class="products-inner">
+        <div class="products-head">
+          <div class="products-head-right">
+            <h2 class="section-title">جدیدترین‌ها</h2>
+          </div>
+          <a href="#" class="section-more">
+            مشاهده همه
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+            >
+              <polyline points="15 18 9 12 15 6" />
+            </svg>
+          </a>
+        </div>
+
+        <div class="na-slider-wrap">
+          <button class="na-arrow na-arrow-prev" id="naPrev" aria-label="قبلی">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+            >
+              <polyline points="9 18 15 12 9 6" />
+            </svg>
+          </button>
+
+          <div class="na-track-container">
+            <div class="na-track" id="naTrack">
+              <div class="pcard na-card" data-cat="fashion">
+                <div class="pcard-img">
+                  <div
+                    class="pcard-img-bg"
+                    style="
+                      background: linear-gradient(135deg, #ede9fe, #fce7f3);
+                    "
+                  ></div>
+                  <img src="assets/images/arrivals/dress.webp" alt="پیراهن" />
+                  <button class="pcard-wish" aria-label="علاقه‌مندی">
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path
+                        d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"
+                      />
+                    </svg>
+                  </button>
+                  <span class="pcard-badge badge-new">جدید</span>
+                </div>
+                <div class="pcard-body">
+                  <span class="pcard-brand">Zara</span>
+                  <h3 class="pcard-name">پیراهن بلند گلدار زنانه مدل Summer</h3>
+                  <div class="pcard-stars">
+                    <span class="stars-fill">★★★★★</span>
+                    <span class="stars-count">(۴۲)</span>
+                  </div>
+                  <div class="pcard-prices">
+                    <span class="price-now">۱٬۲۵۰٬۰۰۰ ت</span>
+                  </div>
+                  <button class="pcard-add">
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path
+                        d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"
+                      />
+                      <line x1="3" y1="6" x2="21" y2="6" />
+                      <path d="M16 10a4 4 0 01-8 0" />
+                    </svg>
+                    افزودن به سبد
+                  </button>
+                </div>
+              </div>
+
+              <div class="pcard na-card" data-cat="digital">
+                <div class="pcard-img">
+                  <div
+                    class="pcard-img-bg"
+                    style="
+                      background: linear-gradient(135deg, #e0f2fe, #f0fdf4);
+                    "
+                  ></div>
+                  <img
+                    src="assets/images/arrivals/watch.webp"
+                    alt="ساعت هوشمند"
+                  />
+                  <button class="pcard-wish" aria-label="علاقه‌مندی">
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path
+                        d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"
+                      />
+                    </svg>
+                  </button>
+                  <span class="pcard-badge badge-new">جدید</span>
+                </div>
+                <div class="pcard-body">
+                  <span class="pcard-brand">Apple</span>
+                  <h3 class="pcard-name">ساعت هوشمند Apple Watch Series 9</h3>
+                  <div class="pcard-stars">
+                    <span class="stars-fill">★★★★★</span>
+                    <span class="stars-count">(۸۸)</span>
+                  </div>
+                  <div class="pcard-prices">
+                    <span class="price-now">۱۸٬۵۰۰٬۰۰۰ ت</span>
+                  </div>
+                  <button class="pcard-add">
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path
+                        d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"
+                      />
+                      <line x1="3" y1="6" x2="21" y2="6" />
+                      <path d="M16 10a4 4 0 01-8 0" />
+                    </svg>
+                    افزودن به سبد
+                  </button>
+                </div>
+              </div>
+
+              <div class="pcard na-card" data-cat="beauty">
+                <div class="pcard-img">
+                  <div
+                    class="pcard-img-bg"
+                    style="
+                      background: linear-gradient(135deg, #fdf4ff, #fce7f3);
+                    "
+                  ></div>
+                  <img src="assets/images/arrivals/Ordinary.webp" alt="سرم" />
+                  <button class="pcard-wish" aria-label="علاقه‌مندی">
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path
+                        d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"
+                      />
+                    </svg>
+                  </button>
+                  <span class="pcard-badge badge-new">جدید</span>
+                </div>
+                <div class="pcard-body">
+                  <span class="pcard-brand">The Ordinary</span>
+                  <h3 class="pcard-name">سرم ویتامین C ضد لک و روشن‌کننده</h3>
+                  <div class="pcard-stars">
+                    <span class="stars-fill">★★★★☆</span>
+                    <span class="stars-count">(۱۷۳)</span>
+                  </div>
+                  <div class="pcard-prices">
+                    <span class="price-now">۶۸۰٬۰۰۰ ت</span>
+                  </div>
+                  <button class="pcard-add">
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path
+                        d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"
+                      />
+                      <line x1="3" y1="6" x2="21" y2="6" />
+                      <path d="M16 10a4 4 0 01-8 0" />
+                    </svg>
+                    افزودن به سبد
+                  </button>
+                </div>
+              </div>
+
+              <div class="pcard na-card" data-cat="shoes">
+                <div class="pcard-img">
+                  <div
+                    class="pcard-img-bg"
+                    style="
+                      background: linear-gradient(135deg, #fef9c3, #fef3c7);
+                    "
+                  ></div>
+                  <img src="assets/images/arrivals/puma.webp" alt="کتانی" />
+                  <button class="pcard-wish" aria-label="علاقه‌مندی">
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path
+                        d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"
+                      />
+                    </svg>
+                  </button>
+                  <span class="pcard-badge badge-new">جدید</span>
+                </div>
+                <div class="pcard-body">
+                  <span class="pcard-brand">Adidas</span>
+                  <h3 class="pcard-name">کتانی Samba OG مردانه رنگ سفید</h3>
+                  <div class="pcard-stars">
+                    <span class="stars-fill">★★★★★</span>
+                    <span class="stars-count">(۲۱۵)</span>
+                  </div>
+                  <div class="pcard-prices">
+                    <span class="price-now">۲٬۴۰۰٬۰۰۰ ت</span>
+                  </div>
+                  <button class="pcard-add">
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path
+                        d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"
+                      />
+                      <line x1="3" y1="6" x2="21" y2="6" />
+                      <path d="M16 10a4 4 0 01-8 0" />
+                    </svg>
+                    افزودن به سبد
+                  </button>
+                </div>
+              </div>
+
+              <div class="pcard na-card" data-cat="fashion">
+                <div class="pcard-img">
+                  <div
+                    class="pcard-img-bg"
+                    style="
+                      background: linear-gradient(135deg, #f0fdf4, #ecfdf5);
+                    "
+                  ></div>
+                  <img src="assets/images/arrivals/shirt.webp" alt="تی‌شرت" />
+                  <button class="pcard-wish" aria-label="علاقه‌مندی">
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path
+                        d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"
+                      />
+                    </svg>
+                  </button>
+                  <span class="pcard-badge badge-new">جدید</span>
+                </div>
+                <div class="pcard-body">
+                  <span class="pcard-brand">Uniqlo</span>
+                  <h3 class="pcard-name">تی‌شرت یقه گرد پنبه‌ای مردانه</h3>
+                  <div class="pcard-stars">
+                    <span class="stars-fill">★★★★☆</span>
+                    <span class="stars-count">(۹۶)</span>
+                  </div>
+                  <div class="pcard-prices">
+                    <span class="price-now">۳۸۰٬۰۰۰ ت</span>
+                  </div>
+                  <button class="pcard-add">
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path
+                        d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"
+                      />
+                      <line x1="3" y1="6" x2="21" y2="6" />
+                      <path d="M16 10a4 4 0 01-8 0" />
+                    </svg>
+                    افزودن به سبد
+                  </button>
+                </div>
+              </div>
+
+              <div class="pcard na-card" data-cat="beauty">
+                <div class="pcard-img">
+                  <div
+                    class="pcard-img-bg"
+                    style="
+                      background: linear-gradient(135deg, #fff1f2, #ffe4e6);
+                    "
+                  ></div>
+                  <img src="assets/images/arrivals/cream.webp" alt="کرم" />
+                  <button class="pcard-wish" aria-label="علاقه‌مندی">
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path
+                        d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"
+                      />
+                    </svg>
+                  </button>
+                  <span class="pcard-badge badge-new">جدید</span>
+                </div>
+                <div class="pcard-body">
+                  <span class="pcard-brand">Cetaphil</span>
+                  <h3 class="pcard-name">کرم مرطوب‌کننده روزانه پوست مختلط</h3>
+                  <div class="pcard-stars">
+                    <span class="stars-fill">★★★★★</span>
+                    <span class="stars-count">(۳۰۷)</span>
+                  </div>
+                  <div class="pcard-prices">
+                    <span class="price-now">۴۹۵٬۰۰۰ ت</span>
+                  </div>
+                  <button class="pcard-add">
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path
+                        d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"
+                      />
+                      <line x1="3" y1="6" x2="21" y2="6" />
+                      <path d="M16 10a4 4 0 01-8 0" />
+                    </svg>
+                    افزودن به سبد
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button class="na-arrow na-arrow-next" id="naNext" aria-label="بعدی">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+            >
+              <polyline points="15 18 9 12 15 6" />
+            </svg>
+          </button>
+        </div>
+
+        <div class="na-dots" id="naDots"></div>
+      </div>
+    </section>
+
+    <!-- =================== NEWSLETTER =================== -->
+    <section class="nl-section">
+      <div class="nl-banner">
+        <div class="nl-deco" aria-hidden="true">
+          <div class="nl-blob nl-blob-1"></div>
+          <div class="nl-blob nl-blob-2"></div>
+          <div class="nl-blob nl-blob-3"></div>
+        </div>
+
+        <div class="nl-watermark" aria-hidden="true">Newsletter</div>
+
+        <div class="nl-content">
+          <div class="nl-badge">
+            <span class="nl-pulse"></span>
+            خبرنامه دنیزشاپ
+          </div>
+          <h2 class="nl-title">
+            اول از همه<br />
+            <span class="nl-highlight">خبردار شو</span>
+          </h2>
+          <p class="nl-sub">
+            تخفیف‌های اختصاصی و محصولات جدید مستقیم به ایمیلت
+          </p>
+
+          <div class="nl-form">
+            <div class="nl-input-wrap">
+              <svg
+                class="nl-input-icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                />
+                <polyline points="22,6 12,13 2,6" />
+              </svg>
+              <input
+                type="email"
+                class="nl-input"
+                placeholder="ایمیل خود را وارد کنید"
+                dir="rtl"
               />
-              <div class="glass-float-card card-top-right">
-                <i class="fa-solid fa-award"></i>
-                <div>
-                  <strong>رتبه یک</strong>
-                  <span>رضایت مشتری ۲۰۲۵</span>
-                </div>
-              </div>
-              <div class="glass-float-card card-bottom-left">
-                <i class="fa-solid fa-users-viewfinder"></i>
-                <div>
-                  <strong>+۵۰۰</strong>
-                  <span>پرسنل متخصص</span>
-                </div>
-              </div>
             </div>
+            <button class="nl-btn">عضویت رایگان</button>
           </div>
 
-          <div class="parsayan-content-side">
-            <span class="parsayan-badge">داستان ما</span>
-            <h2 class="about-title">
-              معماری نوین <br />
-              <span class="gradient-text-blue">لجستیک جهانی</span>
-            </h2>
-            <p class="about-paragraph">
-              پارسایان تنها یک شرکت حمل و نقل نیست؛ ما پلی میان رویاهای تجاری
-              شما و واقعیت بازار جهانی هستیم. از سال ۲۰۰۰، ما با تلفیق
-              <strong>تجربه سنتی</strong> و <strong>تکنولوژی مدرن</strong>،
-              استانداردهای جدیدی را در صنعت لجستیک تعریف کرده‌ایم. ما باور داریم
-              که هر مرسوله، امانتی گرانبهاست که سرنوشت یک کسب‌وکار را تعیین
-              می‌کند.
-            </p>
+          <p class="nl-note">بدون اسپم · هر وقت خواستی لغو کن</p>
+        </div>
 
-            <div class="parsayan-features">
-              <div class="p-feature-item">
-                <div class="pf-icon"><i class="fa-solid fa-headset"></i></div>
-                <div class="pf-text">
-                  <h5>پشتیبانی اختصاصی</h5>
-                  <p>مدیر اکانت اختصاصی برای هر تاجر</p>
-                </div>
-              </div>
-              <div class="p-feature-item">
-                <div class="pf-icon">
-                  <i class="fa-solid fa-boxes-stacked"></i>
-                </div>
-                <div class="pf-text">
-                  <h5>انبارداری هوشمند</h5>
-                  <p>سیستم‌های رباتیک مدیریت کالا</p>
-                </div>
-              </div>
-            </div>
-
-            <a href="#" class="btn-about-action">
-              <span>بیشتر بدانید</span>
-              <i class="fa-solid fa-arrow-left"></i>
-            </a>
+        <div class="nl-stats">
+          <div class="nl-stat">
+            <span class="nl-stat-num">+۵۰K</span>
+            <span class="nl-stat-lab">عضو فعال</span>
+          </div>
+          <div class="nl-stat-div"></div>
+          <div class="nl-stat">
+            <span class="nl-stat-num">هفته‌ای</span>
+            <span class="nl-stat-lab">یک ایمیل</span>
+          </div>
+          <div class="nl-stat-div"></div>
+          <div class="nl-stat">
+            <span class="nl-stat-num">رایگان</span>
+            <span class="nl-stat-lab">برای همیشه</span>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="social-proof-section">
-      <div class="glow-spot-left"></div>
-      <div class="glow-spot-right"></div>
-
-      <div class="container">
-        <div class="sec-header">
-          <span class="pill-tag">صدای اعتماد</span>
-          <h2>تجربه همکاری با <span class="gradient-text">پارسایان</span></h2>
-          <p class="sec-desc">رضایت مدیران ارشد صنایع، بزرگترین سرمایه ماست.</p>
+    <!-- =================== REVIEWS =================== -->
+    <section class="reviews-section">
+      <div class="reviews-inner">
+        <div class="products-head">
+          <h2 class="section-title">نظر مشتریان</h2>
         </div>
 
-        <div class="testimonials-grid">
-          <div class="glass-review-card" data-tilt>
-            <div class="card-backdrop"></div>
-            <div class="review-header">
-              <div class="reviewer-img">
-                <img
-                  src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=100&auto=format&fit=crop"
-                  alt="CEO"
-                />
-                <div class="verified-badge">
-                  <i class="fa-solid fa-check"></i>
+        <div class="reviews-slider-wrap">
+          <button
+            class="rev-arrow rev-arrow-prev"
+            id="revPrev"
+            aria-label="قبلی"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+            >
+              <polyline points="9 18 15 12 9 6" />
+            </svg>
+          </button>
+
+          <div class="reviews-track-container">
+            <div class="reviews-track" id="revTrack">
+              <div class="rcard">
+                <div class="rcard-top">
+                  <div class="rcard-avatar">
+                    <img
+                      src="assets/images/reviews/sara.webp"
+                      alt="سارا محمدی"
+                    />
+                  </div>
+                  <div class="rcard-meta">
+                    <span class="rcard-name">سارا محمدی</span>
+                    <span class="rcard-city">تهران</span>
+                  </div>
                 </div>
+                <div class="pcard-stars">
+                  <span class="stars-fill">★★★★★</span>
+                </div>
+                <p class="rcard-text">
+                  کیفیت محصول فوق‌العاده بود. بسته‌بندی مرتب و ارسال سریع. قطعاً
+                  دوباره خرید می‌کنم.
+                </p>
               </div>
-              <div class="reviewer-info">
-                <h5>مهندس آرش راد</h5>
-                <span>مدیرعامل پترو پالایش</span>
+
+              <div class="rcard">
+                <div class="rcard-top">
+                  <div class="rcard-avatar">
+                    <img
+                      src="assets/images/reviews/amirreza.webp"
+                      alt="امیر رضایی"
+                    />
+                  </div>
+                  <div class="rcard-meta">
+                    <span class="rcard-name">امیر رضایی</span>
+                    <span class="rcard-city">اصفهان</span>
+                  </div>
+                </div>
+                <div class="pcard-stars">
+                  <span class="stars-fill">★★★★☆</span>
+                </div>
+                <p class="rcard-text">
+                  قیمت مناسب و جنس خوب. فقط رنگ کمی با عکس سایت متفاوت بود ولی
+                  در کل راضی هستم.
+                </p>
               </div>
-              <div class="review-stars">
-                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
-                ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
-                ><i class="fa-solid fa-star"></i>
+
+              <div class="rcard">
+                <div class="rcard-top">
+                  <div class="rcard-avatar">
+                    <img
+                      src="assets/images/reviews/nilofar.webp"
+                      alt="نیلوفر احمدی"
+                    />
+                  </div>
+                  <div class="rcard-meta">
+                    <span class="rcard-name">نیلوفر احمدی</span>
+                    <span class="rcard-city">مشهد</span>
+                  </div>
+                </div>
+                <div class="pcard-stars">
+                  <span class="stars-fill">★★★★★</span>
+                </div>
+                <p class="rcard-text">
+                  اولین باری بود از دنیزشاپ خرید می‌کردم. واقعاً از تجربه خریدم
+                  راضی بودم و پشتیبانی هم عالی بود.
+                </p>
               </div>
-            </div>
-            <div class="review-body">
-              <i class="fa-solid fa-quote-right quote-icon"></i>
-              <p>
-                سرعت ترخیص کالا در گمرک شانگهای توسط تیم پارسایان باورنکردنی
-                بود. ما توانستیم خط تولید کارخانه را ۳ روز زودتر از موعد
-                راه‌اندازی کنیم.
-              </p>
+
+              <div class="rcard">
+                <div class="rcard-top">
+                  <div class="rcard-avatar">
+                    <img
+                      src="assets/images/reviews/reza.webp"
+                      alt="رضا کریمی"
+                    />
+                  </div>
+                  <div class="rcard-meta">
+                    <span class="rcard-name">رضا کریمی</span>
+                    <span class="rcard-city">شیراز</span>
+                  </div>
+                </div>
+                <div class="pcard-stars">
+                  <span class="stars-fill">★★★★★</span>
+                </div>
+                <p class="rcard-text">
+                  محصول دقیقاً مطابق توضیحات بود. ارسال هم سریع‌تر از موعد مقرر
+                  انجام شد. ممنون از دنیزشاپ.
+                </p>
+              </div>
+
+              <div class="rcard">
+                <div class="rcard-top">
+                  <div class="rcard-avatar">
+                    <img
+                      src="assets/images/reviews/maryam.webp"
+                      alt="مریم حسینی"
+                    />
+                  </div>
+                  <div class="rcard-meta">
+                    <span class="rcard-name">مریم حسینی</span>
+                    <span class="rcard-city">تبریز</span>
+                  </div>
+                </div>
+                <div class="pcard-stars">
+                  <span class="stars-fill">★★★★☆</span>
+                </div>
+                <p class="rcard-text">
+                  خرید راحت و بدون دردسر. سایت هم خوب طراحی شده و پیدا کردن
+                  محصول آسانه.
+                </p>
+              </div>
+
+              <div class="rcard">
+                <div class="rcard-top">
+                  <div class="rcard-avatar">
+                    <img src="assets/images/reviews/ali.webp" alt="علی موسوی" />
+                  </div>
+                  <div class="rcard-meta">
+                    <span class="rcard-name">علی موسوی</span>
+                    <span class="rcard-city">کرج</span>
+                  </div>
+                </div>
+                <div class="pcard-stars">
+                  <span class="stars-fill">★★★★★</span>
+                </div>
+                <p class="rcard-text">
+                  پشتیبانی عالی داشتند. یک سوال داشتم خیلی سریع جواب دادند. از
+                  خریدم کاملاً راضیم.
+                </p>
+              </div>
             </div>
           </div>
 
-          <div class="glass-review-card highlight-review" data-tilt>
-            <div class="card-backdrop"></div>
-            <div class="review-header">
-              <div class="reviewer-img">
-                <img
-                  src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=100&auto=format&fit=crop"
-                  alt="Manager"
-                />
-                <div class="verified-badge">
-                  <i class="fa-solid fa-check"></i>
-                </div>
-              </div>
-              <div class="reviewer-info">
-                <h5>سارا محتشم</h5>
-                <span>واردات قطعات الکترونیک</span>
-              </div>
-              <div class="review-stars">
-                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
-                ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
-                ><i class="fa-solid fa-star-half-stroke"></i>
-              </div>
+          <button
+            class="rev-arrow rev-arrow-next"
+            id="revNext"
+            aria-label="بعدی"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+            >
+              <polyline points="15 18 9 12 15 6" />
+            </svg>
+          </button>
+        </div>
+
+        <div class="rev-dots" id="revDots"></div>
+      </div>
+    </section>
+
+    <!-- =================== BLOG =================== -->
+    <section class="blog-section">
+      <div class="blog-inner">
+        <div class="products-head">
+          <h2 class="section-title">آخرین مقالات</h2>
+          <a href="#" class="section-more">
+            مشاهده همه
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+            >
+              <polyline points="15 18 9 12 15 6" />
+            </svg>
+          </a>
+        </div>
+        <div class="blog-grid">
+          <div class="pcard blog-card">
+            <div class="blog-img">
+              <div
+                class="pcard-img-bg"
+                style="background: linear-gradient(135deg, #ede9fe, #fce7f3)"
+              ></div>
+              <img
+                src="assets/images/blog/blog2.webp"
+                alt="راهنمای ست کردن لباس"
+              />
+              <span class="pcard-badge badge-new">مد و پوشاک</span>
             </div>
-            <div class="review-body">
-              <i class="fa-solid fa-quote-right quote-icon"></i>
-              <p>
-                امنیت در حمل چیپست‌های حساس برای ما اولویت اول است.
-                بسته‌بندی‌های ضدضربه پارسایان باعث شد حتی یک قطعه آسیب نبیند.
-              </p>
+            <div class="pcard-body">
+              <span class="pcard-brand">۱۵ خرداد ۱۴۰۵</span>
+              <h3 class="pcard-name">
+                راهنمای کامل ست کردن لباس برای فصل تابستان
+              </h3>
+              <a href="#" class="blog-more"
+                >ادامه مطلب
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                >
+                  <polyline points="15 18 9 12 15 6" />
+                </svg>
+              </a>
             </div>
           </div>
 
-          <div class="glass-review-card" data-tilt>
-            <div class="card-backdrop"></div>
-            <div class="review-header">
-              <div class="reviewer-img">
-                <img
-                  src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=100&auto=format&fit=crop"
-                  alt="Director"
-                />
-                <div class="verified-badge">
-                  <i class="fa-solid fa-check"></i>
-                </div>
-              </div>
-              <div class="reviewer-info">
-                <h5>علی تبریزی</h5>
-                <span>صادرات خشکبار</span>
-              </div>
-              <div class="review-stars">
-                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
-                ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
-                ><i class="fa-solid fa-star"></i>
-              </div>
+          <div class="pcard blog-card">
+            <div class="blog-img">
+              <div
+                class="pcard-img-bg"
+                style="background: linear-gradient(135deg, #e0f2fe, #ecfdf5)"
+              ></div>
+              <img src="assets/images/blog/blog25.webp" alt="مراقبت از پوست" />
+              <span class="pcard-badge badge-disc">زیبایی</span>
             </div>
-            <div class="review-body">
-              <i class="fa-solid fa-quote-right quote-icon"></i>
-              <p>
-                ارسال کانتینرهای یخچالی به اروپا با حفظ دمای دقیق، چالش بزرگی
-                بود که پارسایان به خوبی از عهده آن برآمد.
-              </p>
+            <div class="pcard-body">
+              <span class="pcard-brand">۱۰ خرداد ۱۴۰۵</span>
+              <h3 class="pcard-name">
+                ۵ روتین مراقبت از پوست که باید هر روز انجام دهید
+              </h3>
+              <a href="#" class="blog-more"
+                >ادامه مطلب
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                >
+                  <polyline points="15 18 9 12 15 6" />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="pcard blog-card">
+            <div class="blog-img">
+              <div
+                class="pcard-img-bg"
+                style="background: linear-gradient(135deg, #fff1f2, #fef9c3)"
+              ></div>
+              <img src="assets/images/blog/blog26.webp" alt="خرید هوشمند" />
+              <span class="pcard-badge badge-hot">راهنمای خرید</span>
+            </div>
+            <div class="pcard-body">
+              <span class="pcard-brand">۵ خرداد ۱۴۰۵</span>
+              <h3 class="pcard-name">
+                چطور با بودجه کم، بهترین خرید آنلاین را داشته باشیم
+              </h3>
+              <a href="#" class="blog-more"
+                >ادامه مطلب
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                >
+                  <polyline points="15 18 9 12 15 6" />
+                </svg>
+              </a>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <footer class="main-footer">
-      <div class="footer-glow"></div>
-      <div class="container relative-z">
+    <!-- =================== FOOTER =================== -->
+    <footer class="footer">
+      <div class="footer-inner">
         <div class="footer-grid">
-          <div class="footer-col brand-col">
-            <div class="footer-logo">
-              <img src="logo.png" alt="Parsayan" />
-              <span>Parsayan</span>
-            </div>
-            <p>
-              پیشرو در صنعت حمل و نقل بین‌المللی با رویکردی مدرن و هوشمند. ما
-              فاصله بین مبدا و مقصد را با تکنولوژی پر می‌کنیم.
+          <div class="footer-col footer-col-brand">
+            <a href="/" class="footer-logo">DenizShop</a>
+            <p class="footer-desc">
+              فروشگاه آنلاین دنیزشاپ — بهترین محصولات با بهترین قیمت، تجربه
+              خریدی متفاوت برای شما.
             </p>
             <div class="footer-socials">
-              <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-              <a href="#"><i class="fa-brands fa-instagram"></i></a>
-              <a href="#"><i class="fa-brands fa-twitter"></i></a>
-              <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+              <a href="#" class="footer-social" aria-label="اینستاگرام">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                >
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                  <circle cx="12" cy="12" r="4" />
+                  <circle
+                    cx="17.5"
+                    cy="6.5"
+                    r="1"
+                    fill="currentColor"
+                    stroke="none"
+                  />
+                </svg>
+              </a>
+              <a href="#" class="footer-social" aria-label="تلگرام">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                >
+                  <path d="M21.5 2.5L2 10.5l7 2.5 2.5 7 3-4.5 5 4 2-17z" />
+                </svg>
+              </a>
+              <a href="#" class="footer-social" aria-label="واتساپ">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                >
+                  <path
+                    d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"
+                  />
+                </svg>
+              </a>
+              <a href="#" class="footer-social" aria-label="توییتر">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                >
+                  <path
+                    d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"
+                  />
+                </svg>
+              </a>
             </div>
           </div>
 
-          <div class="footer-col links-col">
-            <h4>دسترسی سریع</h4>
-            <ul>
-              <li><a href="#">صفحه اصلی</a></li>
-              <li><a href="#">رهگیری مرسوله</a></li>
-              <li><a href="#">استعلام قیمت</a></li>
-              <li><a href="#">وبلاگ آموزشی</a></li>
+          <div class="footer-col">
+            <h4 class="footer-col-title">لینک‌های سریع</h4>
+            <ul class="footer-links">
+              <li><a href="index.html">صفحه اصلی</a></li>
+              <li><a href="about-us.html">درباره ما</a></li>
+              <li><a href="contact.html">تماس با ما</a></li>
+              <li><a href="blog.html">وبلاگ</a></li>
+              <li><a href="#">تخفیف‌ها</a></li>
+              <li><a href="order-tracking.html">پیگیری سفارش</a></li>
             </ul>
           </div>
 
-          <div class="footer-col services-col">
-            <h4>خدمات ما</h4>
-            <ul>
-              <li><a href="#">حمل هوایی اکسپرس</a></li>
-              <li><a href="#">حمل دریایی (FCL/LCL)</a></li>
-              <li><a href="#">ترانزیت زمینی</a></li>
-              <li><a href="#">ترخیص کالا</a></li>
+          <div class="footer-col">
+            <h4 class="footer-col-title">دسته‌بندی‌ها</h4>
+            <ul class="footer-links">
+              <li><a href="#">پوشاک زنانه</a></li>
+              <li><a href="#">پوشاک مردانه</a></li>
+              <li><a href="#">کفش و کیف</a></li>
+              <li><a href="#">آرایشی و بهداشتی</a></li>
+              <li><a href="#">دیجیتال</a></li>
+              <li><a href="#">ورزش و سفر</a></li>
             </ul>
           </div>
 
-          <div class="footer-col contact-col">
-            <h4>تماس با ما</h4>
-            <ul class="contact-list">
+          <div class="footer-col">
+            <h4 class="footer-col-title">تماس با ما</h4>
+            <ul class="footer-contact">
               <li>
-                <i class="fa-solid fa-location-dot"></i>
-                <span>تهران، خیابان ولیعصر، برج تجارت جهانی</span>
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                >
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+                  <circle cx="12" cy="10" r="3" />
+                </svg>
+                تبریز
               </li>
               <li>
-                <i class="fa-solid fa-phone"></i>
-                <span>021-88889999</span>
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                >
+                  <path
+                    d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.68A2 2 0 012 .01h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14.92v2z"
+                  />
+                </svg>
+                ۰۴۱-۳۳۴۴۵۵۶۶
               </li>
               <li>
-                <i class="fa-solid fa-envelope"></i>
-                <span>info@parsayan.com</span>
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                >
+                  <path
+                    d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                  />
+                  <polyline points="22,6 12,13 2,6" />
+                </svg>
+                info@denizshop.ir
               </li>
             </ul>
-            <div class="newsletter-box">
-              <input type="email" placeholder="ایمیل خود را وارد کنید..." />
-              <button><i class="fa-solid fa-paper-plane"></i></button>
-            </div>
           </div>
         </div>
 
         <div class="footer-bottom">
-          <p>© ۲۰۲۶ تمامی حقوق برای پارسایان محفوظ است.</p>
-          <div class="footer-bottom-links">
-            <a href="#">قوانین و مقررات</a>
-            <span class="separator">•</span>
-            <a href="#">حریم خصوصی</a>
-          </div>
+          <p class="footer-copy">© ۱۴۰۵ دنیزشاپ. تمامی حقوق محفوظ است.</p>
+          <p class="footer-dev">طراحی و توسعه توسط <span>امیرعابدین</span></p>
         </div>
       </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="script.js"></script>
+    <script src="assets/js/main.js"></script>
   </body>
 </html>
